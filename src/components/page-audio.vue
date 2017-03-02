@@ -53,7 +53,7 @@
           <div class="tabLinks" >
             <button 
               class="tab"
-              :class="{active: activeTabIndex === i}"
+              :class="{active: tabIndex === i}"
               v-for="(category, i) in music.categoryNames"
               @click="changeTab(i)">
               {{category}}
@@ -61,12 +61,12 @@
           </div>
           <div 
             class="tabContent" 
-            :class="{active: activeTabIndex === i}"
+            :class="{active: tabIndex === i}"
             v-for="(category, key, i) in music.songArray">
             <a 
               :href="'/src/assets/mp3/' + song.mp3" 
               class="song"
-              :class="{active: activeSongIndex === k}"
+              :class="{active: activeSongIndex === k && activeTabIndex === i}"
               :data-category="key"
               :data-tab-index="i"
               :data-song-index="k"
@@ -91,6 +91,7 @@
     data () {
       return {
         music: music,
+        tabIndex: 0,
         activeTabIndex: 0,
         activeSongIndex: 4,
         activeSong: null,
@@ -124,7 +125,7 @@
         return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
       },
       changeTab (index) {
-        this.activeTabIndex = index;
+        this.tabIndex = index;
       },
       getActiveSong () {
         return this.playList.filter(x => {
@@ -137,7 +138,7 @@
             ? this.playList[this.playList.indexOf(activeSong) - 1] 
             : this.playList[this.playList.length -1];
 
-        this.activeTabIndex = nextSong.tabIndex;
+        this.activeTabIndex = this.tabIndex = nextSong.tabIndex;
         this.activeSongIndex = nextSong.songIndex;
         this.playSong(nextSong);
       },
@@ -147,7 +148,7 @@
             ? this.playList[this.playList.indexOf(activeSong) + 1] 
             : this.playList[0];
             
-        this.activeTabIndex = nextSong.tabIndex;
+        this.activeTabIndex = this.tabIndex = nextSong.tabIndex;
         this.activeSongIndex = nextSong.songIndex;
         this.playSong(nextSong);
       },
