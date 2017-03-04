@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Főoldal</title>
+  <title>Letöltések</title>
   <meta charset="utf-8">
-  <meta name="description" content="Ok Zenekar lakodalom party bál eksüvő Zenei kínálat kompromisszum nélkül!">
+  <meta name="description" content="Zenék letöltése">
   <meta name="keywords" content="lakodalmas zenekar, party zenekar, zenekar esküvőre">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,39 +18,30 @@
   </style>
   
   <style type="text/css">
-    @media (max-width:767px) {
-      .index p {
-        margin-bottom: 10px
-      }
-    }
-    /*# sourceURL=/./src/pages/index.vue */
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EseUJBQ0EsU0FDSSxrQkFBb0IsQ0FDdkIsQ0FDQSIsImZpbGUiOiJpbmRleC52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuLmluZGV4IHAge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
-  </style>
-  <style type="text/css">
-    .fade-enter-active,
-    .fade-leave-active {
-      transition: opacity 5s
+    .downloads h3 {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      color: #f9f2e7;
+      padding: 5px;
+      background: #cc333f;
+      text-transform: uppercase
     }
     
-    .fade-enter,
-    .fade-leave-to {
-      opacity: 0
+    .downloads ul {
+      margin-bottom: 20px
     }
     
-    .img-cycle {
-      position: relative;
-      padding-top: 66.28571%
+    .downloads a {
+      display: block;
+      margin-bottom: 5px;
+      padding: 5px;
+      text-decoration: none;
+      background: #6a4a3c;
+      color: #f9f2e7
     }
-    
-    .img-cycle img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto
-    }
-    /*# sourceURL=/./src/components/img-cycle.vue */
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9jb21wb25lbnRzL2ltZy1jeWNsZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esc0NBQ0UscUJBQXVCLENBQ3hCLEFBQ0QsMkJBQ0UsU0FBVyxDQUNaLEFBQ0QsV0FDRSxrQkFBbUIsQUFDbkIscUJBQXVCLENBQ3hCLEFBQ0QsZUFDRSxrQkFBbUIsQUFDbkIsTUFBTyxBQUNQLE9BQVEsQUFDUixXQUFZLEFBQ1osV0FBYSxDQUNkIiwiZmlsZSI6ImltZy1jeWNsZS52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5mYWRlLWVudGVyLWFjdGl2ZSwgLmZhZGUtbGVhdmUtYWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSA1cztcbn1cbi5mYWRlLWVudGVyLCAuZmFkZS1sZWF2ZS10byB7XG4gIG9wYWNpdHk6IDA7XG59XG4uaW1nLWN5Y2xlIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNjYuMjg1NzElO1xufVxuLmltZy1jeWNsZSBpbWcge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+    /*# sourceURL=/./src/pages/downloads.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9kb3dubG9hZHMudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLGNBQ0UsZUFBZ0IsQUFDaEIsaUJBQWtCLEFBQ2xCLG1CQUFvQixBQUNwQixjQUFlLEFBQ2YsWUFBYSxBQUNiLG1CQUFvQixBQUNwQix3QkFBMEIsQ0FDM0IsQUFDRCxjQUNFLGtCQUFvQixDQUNyQixBQUNELGFBQ0UsY0FBZSxBQUNmLGtCQUFtQixBQUNuQixZQUFhLEFBQ2IscUJBQXNCLEFBQ3RCLG1CQUFvQixBQUNwQixhQUFlLENBQ2hCIiwiZmlsZSI6ImRvd25sb2Fkcy52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5kb3dubG9hZHMgaDMge1xuICBmb250LXNpemU6IDI1cHg7XG4gIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICBjb2xvcjogI0Y5RjJFNztcbiAgcGFkZGluZzogNXB4O1xuICBiYWNrZ3JvdW5kOiAjQ0MzMzNGO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xufVxuLmRvd25sb2FkcyB1bCB7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG4uZG93bmxvYWRzIGEge1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICBwYWRkaW5nOiA1cHg7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgYmFja2dyb3VuZDogIzZBNEEzQztcbiAgY29sb3I6ICNGOUYyRTc7XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
   </style>
 </head>
 
@@ -58,24 +49,68 @@
   <div id="app">
     <div class="pageNavigation"></div>
     <div id="header"><button class="menu hide-for-large">menu</button>
-      <nav><a href="/" class="router-link-active">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
+      <nav><a href="/" class="">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
         <div class="sub"><span class="categoryTitle">article</span>
           <div class="categoryLinks"><a href="/lakodalmas-zenekar" class="">Lakodalmas Zenekar</a><a href="/zenekar-eskuvore" class="">Zenekar esküvőre</a></div>
-        </div><a href="/letoltesek" class="">Letöltések</a><a href="/galeria" class="">Galéria</a><a href="/video" class="">Videó</a><a href="/partnereink" class="">Partnereink</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="">Vélemények</a></nav>
+        </div><a href="/letoltesek" class="router-link-active">Letöltések</a><a href="/galeria" class="">Galéria</a><a href="/video" class="">Videó</a><a href="/partnereink" class="">Partnereink</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek"
+          class="">Vélemények</a></nav>
       <h1><span>O</span>k<span>z</span>enekar</h1>
     </div>
     <div id="content">
       <div class="inner">
-        <h2>Főoldal</h2>
+        <h2>Letöltések</h2>
       </div>
-      <div class="inner index">
+      <div class="inner downloads" title="test">
         <div class="row">
           <div class="small-12 medium-6 large-6 columns">
-            <p>Örökzöld, retro, mulatós élőben, és igény szerint laptopról a legmodernebb zenék is.<br> <br> Minden a Ti kívánságotok szerint! Teljes mértékben ránk is bízhatjátok, de közösen is összeállíthatjuk az est zenei anyagát, hogy a nagyszülőktől
-              a barátokig, mindenki a legjobban érezhesse magát.<br> <br> Ha felkeltettük érdeklődéseteket, keressetek telefonon és <a href="mailto:okzenekar@gmail.com">emailen</a>.</p>
+            <h3>Magyar</h3>
+            <ul>
+              <li><a href="src/assets/mp3/kicsitszomorkas.mp3">Kicsit szomorkás / Kispál és a Borz </a></li>
+              <li><a href="src/assets/mp3/mond_kis_kocos.mp3">Mond kis kócos / Komár László</a></li>
+              <li><a href="src/assets/mp3/nezz_az_eg_fele.mp3">Nézz az ég felé  / Charlie</a></li>
+              <li><a href="src/assets/mp3/palinkadal.mp3">Pálinka Dal / Magna Cum Laude</a></li>
+              <li><a href="src/assets/mp3/reszegen.mp3">Részegen ki visz majd haza / Bikini</a></li>
+              <li><a href="src/assets/mp3/mostmulik.mp3">Most múlik pontosan / Quimby</a></li>
+              <li><a href="src/assets/mp3/Videkisanzon.mp3">Vidéki sanzon / Magna Cum Laude</a></li>
+            </ul>
           </div>
           <div class="small-12 medium-6 large-6 columns">
-            <div class="img-cycle"><img src="/src/assets/img/cycle/gallery_52.jpg" alt=""></div>
+            <h3>Külföldi</h3>
+            <ul>
+              <li><a href="src/assets/mp3/boleros_besame mucho.mp3">Besame Mucho / Latin</a></li>
+              <li><a href="src/assets/mp3/crazy_little_thing_called_love.mp3">Crazy Little Thing Called Love / Queen</a></li>
+              <li><a href="src/assets/mp3/fly_me_to.mp3">Fly me to the moon / Frank Sinatra</a></li>
+              <li><a href="src/assets/mp3/I-WANT-YOU.mp3">I want you / Elvis Presley</a></li>
+              <li><a href="src/assets/mp3/my_way_latin.mp3">My Way Latin</a></li>
+              <li><a href="src/assets/mp3/labamba.mp3">La Bamba / Ritchie Valens</a></li>
+              <li><a href="src/assets/mp3/put_your_head.mp3">Put Your Head On My Shoulder / Paul Anka</a></li>
+              <li><a href="src/assets/mp3/Quando.mp3">Quando / Engelbert Humperdinck</a></li>
+              <li><a href="src/assets/mp3/una_lacrima_sul_viso.mp3">Una Lacrima Sul Viso / Bobby Solo</a></li>
+              <li><a href="src/assets/mp3/up-olly-murs.mp3">Up / Olly Murs feat. Demi Lovato</a></li>
+              <li><a href="src/assets/mp3/volare.mp3">Volare / Gipsy Kings</a></li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <h3>Instrumentális</h3>
+            <ul>
+              <li><a href="src/assets/mp3/angolkeringo.mp3">Angol keringő - szaxofon</a></li>
+              <li><a href="src/assets/mp3/bicskamaxi-szaxi.mp3">Bicska Maxi - szaxofon</a></li>
+              <li><a href="src/assets/mp3/diximix-klarinet.mp3">Diximix - klarinét</a></li>
+              <li><a href="src/assets/mp3/feelings.mp3">Feelings - Szaxofon</a></li>
+              <li><a href="src/assets/mp3/szaxofon_szolo.mp3">Szaxofon szóló</a></li>
+              <li><a href="src/assets/mp3/girl_from_ipanema_szaxofon.mp3">The Girl from Ipanema - szaxofon</a></li>
+              <li><a href="src/assets/mp3/the-last-waltz-harmonika.mp3">The Last Waltz - harmónika</a></li>
+              <li><a href="src/assets/mp3/bennihill-szaxi.mp3">Yakety Sax – szaxofon</a></li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <h3>Mulatós</h3>
+            <ul>
+              <li><a href="src/assets/mp3/egy_asszony_miatt.mp3">Egy asszony miatt</a></li>
+              <li><a href="src/assets/mp3/gyorcsardas.mp3">Gyorscsárdás</a></li>
+              <li><a href="src/assets/mp3/mulatos.mp3">Mulatós mix</a></li>
+              <li><a href="src/assets/mp3/umbala_umba.mp3">Umbala umba / Váradi Roma Café</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -200,7 +235,7 @@
   </div>
   <script type="text/javascript" src="/manifest.js"></script>
   <script type="text/javascript" src="/vendor.js"></script>
-  <script type="text/javascript" charset="utf-8"  src="/pages/index.chunk.js"></script>
+  <script type="text/javascript" charset="utf-8"  src="/pages/letoltesek.chunk.js"></script>
 
   <script type="text/javascript" src="/main.js"></script>
 

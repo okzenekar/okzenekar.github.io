@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Főoldal</title>
+  <title>Lakodalmas Zenekar</title>
   <meta charset="utf-8">
-  <meta name="description" content="Ok Zenekar lakodalom party bál eksüvő Zenei kínálat kompromisszum nélkül!">
+  <meta name="description" content="Lakodalmas zenekar ismertető">
   <meta name="keywords" content="lakodalmas zenekar, party zenekar, zenekar esküvőre">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,39 +18,28 @@
   </style>
   
   <style type="text/css">
-    @media (max-width:767px) {
-      .index p {
-        margin-bottom: 10px
-      }
-    }
-    /*# sourceURL=/./src/pages/index.vue */
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EseUJBQ0EsU0FDSSxrQkFBb0IsQ0FDdkIsQ0FDQSIsImZpbGUiOiJpbmRleC52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuLmluZGV4IHAge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
-  </style>
-  <style type="text/css">
-    .fade-enter-active,
-    .fade-leave-active {
-      transition: opacity 5s
+    .article strong {
+      display: inline-block;
+      margin-bottom: 5px
     }
     
-    .fade-enter,
-    .fade-leave-to {
-      opacity: 0
+    .article img {
+      vertical-align: top;
+      max-width: 200px;
+      margin-bottom: 5px
     }
     
-    .img-cycle {
-      position: relative;
-      padding-top: 66.28571%
+    .article img.left {
+      float: left;
+      margin-right: 10px
     }
     
-    .img-cycle img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto
+    .article img.right {
+      float: right;
+      margin-left: 10px
     }
-    /*# sourceURL=/./src/components/img-cycle.vue */
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9jb21wb25lbnRzL2ltZy1jeWNsZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esc0NBQ0UscUJBQXVCLENBQ3hCLEFBQ0QsMkJBQ0UsU0FBVyxDQUNaLEFBQ0QsV0FDRSxrQkFBbUIsQUFDbkIscUJBQXVCLENBQ3hCLEFBQ0QsZUFDRSxrQkFBbUIsQUFDbkIsTUFBTyxBQUNQLE9BQVEsQUFDUixXQUFZLEFBQ1osV0FBYSxDQUNkIiwiZmlsZSI6ImltZy1jeWNsZS52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5mYWRlLWVudGVyLWFjdGl2ZSwgLmZhZGUtbGVhdmUtYWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSA1cztcbn1cbi5mYWRlLWVudGVyLCAuZmFkZS1sZWF2ZS10byB7XG4gIG9wYWNpdHk6IDA7XG59XG4uaW1nLWN5Y2xlIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNjYuMjg1NzElO1xufVxuLmltZy1jeWNsZSBpbWcge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+    /*# sourceURL=/./src/components/page-article.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9jb21wb25lbnRzL3BhZ2UtYXJ0aWNsZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsZ0JBQ0UscUJBQXNCLEFBQ3RCLGlCQUFtQixDQUNwQixBQUNELGFBQ0UsbUJBQW9CLEFBQ3BCLGdCQUFpQixBQUNqQixpQkFBbUIsQ0FDcEIsQUFDRCxrQkFDRSxXQUFZLEFBQ1osaUJBQW1CLENBQ3BCLEFBQ0QsbUJBQ0UsWUFBYSxBQUNiLGdCQUFrQixDQUNuQiIsImZpbGUiOiJwYWdlLWFydGljbGUudnVlIiwic291cmNlc0NvbnRlbnQiOlsiXG4uYXJ0aWNsZSBzdHJvbmcge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbn1cbi5hcnRpY2xlIGltZyB7XG4gIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gIG1heC13aWR0aDogMjAwcHg7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbn1cbi5hcnRpY2xlIGltZy5sZWZ0IHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi5hcnRpY2xlIGltZy5yaWdodCB7XG4gIGZsb2F0OiByaWdodDtcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
   </style>
 </head>
 
@@ -58,24 +47,42 @@
   <div id="app">
     <div class="pageNavigation"></div>
     <div id="header"><button class="menu hide-for-large">menu</button>
-      <nav><a href="/" class="router-link-active">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
+      <nav><a href="/" class="">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
         <div class="sub"><span class="categoryTitle">article</span>
-          <div class="categoryLinks"><a href="/lakodalmas-zenekar" class="">Lakodalmas Zenekar</a><a href="/zenekar-eskuvore" class="">Zenekar esküvőre</a></div>
+          <div class="categoryLinks"><a href="/lakodalmas-zenekar" class="router-link-active">Lakodalmas Zenekar</a><a href="/zenekar-eskuvore" class="">Zenekar esküvőre</a></div>
         </div><a href="/letoltesek" class="">Letöltések</a><a href="/galeria" class="">Galéria</a><a href="/video" class="">Videó</a><a href="/partnereink" class="">Partnereink</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="">Vélemények</a></nav>
       <h1><span>O</span>k<span>z</span>enekar</h1>
     </div>
     <div id="content">
       <div class="inner">
-        <h2>Főoldal</h2>
+        <h2>Lakodalmas Zenekar</h2>
       </div>
-      <div class="inner index">
+      <div class="article" title="test">
         <div class="row">
-          <div class="small-12 medium-6 large-6 columns">
-            <p>Örökzöld, retro, mulatós élőben, és igény szerint laptopról a legmodernebb zenék is.<br> <br> Minden a Ti kívánságotok szerint! Teljes mértékben ránk is bízhatjátok, de közösen is összeállíthatjuk az est zenei anyagát, hogy a nagyszülőktől
-              a barátokig, mindenki a legjobban érezhesse magát.<br> <br> Ha felkeltettük érdeklődéseteket, keressetek telefonon és <a href="mailto:okzenekar@gmail.com">emailen</a>.</p>
-          </div>
-          <div class="small-12 medium-6 large-6 columns">
-            <div class="img-cycle"><img src="/src/assets/img/cycle/gallery_52.jpg" alt=""></div>
+          <div class="columns small-12 medium-12 desktop12"><strong>Az OK Zenekar tanácsai lakodalmas zenekar választáshoz</strong><br> <br> <strong>Kedves házasulandó Ifjú Párok!</strong><br> <img alt="" src="/src/assets/img/cycle/img2.jpg?c859c9c81295661964fd4e95d3037972" class="left"> Mi, a szekszárdi
+            OK Zenekar lakodalmas zenekarként közel 30 éves tapasztalattal és rutinnal, de töretlen lelkesedéssel, odafigyeléssel játszunk esküvőkön, lakodalmakban Nektek, Ifjú Pároknak és kedves vendégeiteknek. Kevés lakodalmas zenekarban játszó zenész
+            mondhatja el magáról, hogy lejátszott lakodalmainak a száma közelíti az 1000-et. Lakodalmas zenekarként, ahogy mondani szokták, nemcsak Tolnát-Baranyát, hanem szinte az egész országot, sőt külföldet is bejártuk már. Utóbbi években legtöbbet
+            Budapesten és agglomerációjában zenéltünk. Többször felléphettünk ismert sztárokkal és nem egyszer mi szolgáltattuk a számukra kíséretet – TNT, Demjén Rózsi, Gáspár Laci, Caramel, Auth Csilla, Hevesi Tamás, Fekete Dávid, Kökény Attila, Irigy
+            Hónalj Mirigy, Illényi Katica… Volt szerencsénk zenénkkel szórakoztatni híres, közéleti politikusokat, médiaszereplőket, sztárokat, nevesíteni nincs módunkban őket, mert szerződést illetve személyiségi jogokat sértenénk vele.<br> <br>
+            <img
+              alt="" src="/src/assets/img/cycle/gallery_39.jpg?cbba9fbea66e01af352591baee08a021" class="right">A lakodalom sikerét, jó hangulatát alapjaiban határozza meg a lakodalmas zenekar minősége! Nem véletlenül mondják: „Jó lakodalmat akarsz, válassz egy jó zenekart és egy jó szakácsot!” Ha belegondolunk, ez tényleg nagy igazság, mert nem mindegy,
+              hogy hogy esik az embereknek a felkínált étel, és hogy mit hallgatnak egész éjjel, 8-12 órán át.<br> <br> Kedves Ifjú párok! Azt kell mondanunk, hogy ezen a két területen, ha tehetitek, ragaszkodjatok a minőséghez, az elérhető legjobbhoz,
+              mert megérdemlitek!<br> <br> <img alt="" src="/src/assets/img/cycle/gallery_02.jpg?0b794f28c1f285774809ecbb0945d840" class="left"> A lakodalom egy különleges családi-baráti-rokoni esemény, ahol minden generáció, (a topogó kisgyerektől a
+              szép korú dédpapáig), a legkülönfélébb zenei igényekkel érkezve, de együtt ünnepelve akarja jól érezni magát. Persze minden lakodalom más és más, nincs kettő egyforma. Van olyan násznép, aki mulatósabb, majd, kirúgja a ház oldalát, vannak
+              akik szívesebben beszélgetnek, és szeretik a finom aláfestő instrumentális zenét, van ahol sok a kisgyerek, akkor nekik külön is kedvezünk, vannak akik a tánczenét, vannak akik a mulatóst favorizálják. Ezért nagyon fontos, hogy a lakodalmas
+              zenekar szenzitív zenekar is legyen, azaz képes legyen könnyedén és azonnal a reagálni a násznép reakcióira, kéréseire, így „húzva fel” folyamatosan a hangulatot. Erre a gyors reagálásra csak az a lakodalmas zenekar képes, aki kivételes
+              széles repertoárral rendelkezik a legkülönfélébb műfajokból, aki nincs korlátozva a szűkös repertoár, az egyoldalú zenei hangzás miatt.<br> <br> <img alt="" src="/src/assets/img/cycle/img11.jpg?fdb0144ca290462ac1fa38762f309b0d" class="right">Minden
+              lakodalmas zenekar egyben jól működő, megbízható szolgáltató és partner is. Aki korrektül köti a szerződéseket, betartja az abban foglaltakat, pontos, becsületesen kezeli a pénzügyeket, illendően viselkedik. Jól együtt működik a lakodalomban
+              részt vevő más szolgáltatókkal, az esküvőszervezővel, a vőféllyel, ceremóniamesterrel, a konyhai személyzettel, a pincérekkel, a fotóssal-videóssal, szóval a zenészeknek igazi csapatjátékosok is!<br> <br> <strong>Összegzésül írnék pár dolgot, amit érdemes szem előtt tartani, ha az ember lakodalmas zenekar választására adja fejét:</strong>
+              <ul class="list">
+                <li>Zeneileg a lehető legjobban szóljanak a dalok, mind hangszerek, mind énekek tekintetében, függetlenül attól, hogy hány tagú a zenekar, (mert egy 4-5 fős csapat is tud csapnivalóan megszólalni,de 2-3 fő is tud profi hangzást nyújtani, szóval
+                  a minőség nem a zenekari tagok számától, sokkal inkább a zenei tudásuktól függ!)</li>
+                <li>Lehetőleg kevés szünetet tartsanak.</li>
+                <li>Alkalomhoz illően jelenjenek meg és viselkedjenek.</li>
+                <li>Széles repertoárnak és stílusoknak köszönhetően minden korosztálynak tudjanak játszani.</li>
+                <li>Zenéljenek úgy, hogy fergetegesen érezze magát mindenki, s így olyan legyen a lakodalom, amilyet mindig is szeretettek volna.</li>
+              </ul><br> Mi ilyenek vagyunk! A Ti nagy napotok a mi nagy napunk is, ahol ezekre a feladatokra koncentrálva, professzionálisan állunk helyt!<br> <br> Kedves Ifjú Párok!<br> Válasszatok jól!<br> <br> Üdvözlettel:
+              <br> OK Zenekar, egy nagy tapasztalatú lakodalmas zenekar
           </div>
         </div>
       </div>
@@ -200,7 +207,7 @@
   </div>
   <script type="text/javascript" src="/manifest.js"></script>
   <script type="text/javascript" src="/vendor.js"></script>
-  <script type="text/javascript" charset="utf-8"  src="/pages/index.chunk.js"></script>
+  <script type="text/javascript" charset="utf-8"  src="/pages/lakodalmas-zenekar.chunk.js"></script>
 
   <script type="text/javascript" src="/main.js"></script>
 
