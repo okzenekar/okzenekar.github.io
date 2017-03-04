@@ -18,13 +18,39 @@
   </style>
   
   <style type="text/css">
+    .index p {
+      margin-bottom: 10px
+    }
+    
+    .index p:last-child {
+      margin-bottom: 0
+    }
+    
     @media (max-width:767px) {
-      .index p {
+      .index p:last-child {
         margin-bottom: 10px
       }
     }
+    
+    .index ul {
+      margin-top: -10px;
+      margin-bottom: 10px
+    }
+    
+    .index ul li {
+      position: relative;
+      padding-left: 15px
+    }
+    
+    .index ul li:before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: "\25CF";
+      line-height: 1
+    }
     /*# sourceURL=/./src/pages/index.vue */
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EseUJBQ0EsU0FDSSxrQkFBb0IsQ0FDdkIsQ0FDQSIsImZpbGUiOiJpbmRleC52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuLmluZGV4IHAge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsU0FDRSxrQkFBb0IsQ0FDckIsQUFDRCxvQkFDRSxlQUFpQixDQUNsQixBQUNELHlCQUNBLG9CQUNJLGtCQUFvQixDQUN2QixDQUNBLEFBQ0QsVUFDRSxpQkFBa0IsQUFDbEIsa0JBQW9CLENBQ3JCLEFBQ0QsYUFDRSxrQkFBbUIsQUFDbkIsaUJBQW1CLENBQ3BCLEFBQ0Qsb0JBQ0Usa0JBQW1CLEFBQ25CLE9BQVEsQUFDUixRQUFTLEFBQ1QsZ0JBQWEsQUFDYixhQUFlLENBQ2hCIiwiZmlsZSI6ImluZGV4LnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIlxuQGNoYXJzZXQgXCJVVEYtOFwiO1xuLmluZGV4IHAge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuLmluZGV4IHA6bGFzdC1jaGlsZCB7XG4gIG1hcmdpbi1ib3R0b206IDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbi5pbmRleCBwOmxhc3QtY2hpbGQge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4uaW5kZXggdWwge1xuICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5pbmRleCB1bCBsaSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAxNXB4O1xufVxuLmluZGV4IHVsIGxpOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiA0cHg7XG4gIGNvbnRlbnQ6ICfil48nO1xuICBsaW5lLWhlaWdodDogMTtcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
   </style>
   <style type="text/css">
     .fade-enter-active,
@@ -71,8 +97,14 @@
       <div class="inner index">
         <div class="row">
           <div class="small-12 medium-6 large-6 columns">
-            <p>Örökzöld, retro, mulatós élőben, és igény szerint laptopról a legmodernebb zenék is.<br> <br> Minden a Ti kívánságotok szerint! Teljes mértékben ránk is bízhatjátok, de közösen is összeállíthatjuk az est zenei anyagát, hogy a nagyszülőktől
-              a barátokig, mindenki a legjobban érezhesse magát.<br> <br> Ha felkeltettük érdeklődéseteket, keressetek telefonon és <a href="mailto:okzenekar@gmail.com">emailen</a>.</p>
+            <p>Örökzöld, retro, mulatós élőben, és igény szerint napjaink zenéi DJ-szolgáltatással.</p>
+            <p>Minden a Ti kívánságotok szerint! Teljes mértékben ránk is bízhatjátok, de közösen is összeállíthatjuk az est zenei anyagát, hogy a nagyszülőktől a barátokig, mindenki a legjobban érezhesse magát.</p>
+            <p>Ajándék-szolgáltatásaink:</p>
+            <ul>
+              <li>a ceremóniamesteri tevékenység ellátása</li>
+              <li>a lakodalom helyszínen a esküvői szertartás kihangosítása</li>
+            </ul>
+            <p>Ha felkeltettük érdeklődéseteket, keressetek telefonon és <a href="mailto:okzenekar@gmail.com">emailen</a>.</p>
           </div>
           <div class="small-12 medium-6 large-6 columns">
             <div class="img-cycle"><img src="/src/assets/img/cycle/gallery_52.jpg" alt=""></div>
@@ -152,7 +184,7 @@
             Fly me to the moon / Frank Sinatra
           </a><a href="/src/assets/mp3/I-WANT-YOU.mp3" data-category="foreign" data-tab-index="1" data-song-index="3" class="song">
             I want you / Elvis Presley
-          </a><a href="/src/assets/mp3/my_way_latin.mp3" data-category="foreign" data-tab-index="1" data-song-index="4" class="song active">
+          </a><a href="/src/assets/mp3/my_way_latin.mp3" data-category="foreign" data-tab-index="1" data-song-index="4" class="song">
             My Way Latin
           </a><a href="/src/assets/mp3/labamba.mp3" data-category="foreign" data-tab-index="1" data-song-index="5" class="song">
             La Bamba / Ritchie Valens
@@ -175,7 +207,7 @@
             Diximix - klarinét
           </a><a href="/src/assets/mp3/feelings.mp3" data-category="instrument" data-tab-index="2" data-song-index="3" class="song">
             Feelings - Szaxofon
-          </a><a href="/src/assets/mp3/szaxofon_szolo.mp3" data-category="instrument" data-tab-index="2" data-song-index="4" class="song active">
+          </a><a href="/src/assets/mp3/szaxofon_szolo.mp3" data-category="instrument" data-tab-index="2" data-song-index="4" class="song">
             Szaxofon szóló
           </a><a href="/src/assets/mp3/girl_from_ipanema_szaxofon.mp3" data-category="instrument" data-tab-index="2" data-song-index="5" class="song">
             The Girl from Ipanema - szaxofon
