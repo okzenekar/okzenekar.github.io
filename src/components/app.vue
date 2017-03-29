@@ -14,6 +14,7 @@ import pageHeader from 'root/components/page-header.vue';
 import pageContact from 'root/components/page-contact.vue';
 import pageContent from 'root/components/page-content.vue';
 import pageAudio from 'root/components/page-audio.vue';
+import ga from 'root/components/ga';
 
 export default {
   name: 'app',
@@ -21,6 +22,9 @@ export default {
     return {
       subTitle: ''
     }
+  },
+  mounted () {
+    setTimeout(ga,1000);
   },
   methods: {
     routeChange (e) {
