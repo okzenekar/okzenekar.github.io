@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <title>Galéria</title>
+  <meta http-equiv="Content-Language" content="hu">
   <meta charset="utf-8">
   <meta name="description" content="Fótók a zenekar tagjairól, bulikról, rendezvényekről.">
   <meta name="keywords" content="lakodalmas zenekar, party zenekar, zenekar esküvőre">
@@ -21,36 +22,36 @@
     .gallery h2 {
       margin: 0 10px 20px
     }
-    
+
     .gallery .inner {
       padding: 0 5px
     }
-    
+
     .gallery .frame {
       font-size: 0;
       line-height: 0;
       padding: 0 5px
     }
-    
+
     .gallery a {
       position: relative;
       display: inline-block;
       width: 33.33%
     }
-    
+
     .gallery a img {
       display: block;
       width: 100%;
       height: auto;
       border: 5px solid #f9f2e7
     }
-    
+
     @media (min-width:768px) {
       .gallery a {
         width: 20%
       }
     }
-    
+
     @media (min-width:1025px) {
       .gallery a {
         width: 14.28%
@@ -59,7 +60,7 @@
         border-color: #00a0b0
       }
     }
-    
+
     div[modal-id=picture] .next,
     div[modal-id=picture] .prev {
       position: absolute;
@@ -71,7 +72,7 @@
       width: 20px;
       height: 20px
     }
-    
+
     div[modal-id=picture] .next.prev,
     div[modal-id=picture] .prev.prev {
       left: -20px;
@@ -80,7 +81,7 @@
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg)
     }
-    
+
     div[modal-id=picture] .next.next,
     div[modal-id=picture] .prev.next {
       display: block;
@@ -100,7 +101,7 @@
       height: 0;
       overflow: hidden
     }
-    
+
     .modalLayer .bg {
       z-index: 1000;
       width: 100%;
@@ -111,14 +112,14 @@
       -webkit-transition: opacity .3s, visibility .3s;
       transition: opacity .3s, visibility .3s
     }
-    
+
     .modalLayer .bg,
     .modalLayer .layerContent {
       position: fixed;
       visibility: hidden;
       opacity: 0
     }
-    
+
     .modalLayer .layerContent {
       left: 50%;
       top: 50%;
@@ -135,21 +136,21 @@
       -moz-filter: blur(0);
       -ms-filter: blur(0)
     }
-    
+
     .modalLayer .layerContent h2 {
       font-size: 30px;
       line-height: 1;
       margin-bottom: 25px
     }
-    
+
     .modalLayer .layerContent p {
       margin-bottom: 25px
     }
-    
+
     .modalLayer .layerContent img {
       max-width: none
     }
-    
+
     .modalLayer .layerContent .close {
       position: absolute;
       top: -40px;
@@ -157,7 +158,7 @@
       width: 30px;
       height: 30px
     }
-    
+
     .modalLayer .layerContent .close:after,
     .modalLayer .layerContent .close:before {
       content: "";
@@ -169,44 +170,44 @@
       margin-top: -1px;
       background: #f9f2e7
     }
-    
+
     .modalLayer .layerContent .close:before {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg)
     }
-    
+
     .modalLayer .layerContent .close:after {
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg)
     }
-    
+
     .modalLayer .layerContent .close.hairline:after,
     .modalLayer .layerContent .close.hairline:before {
       height: 1px
     }
-    
+
     @media (max-width:767px) {
       .modalLayer .layerContent {
         padding: 10px
       }
     }
-    
+
     @media (min-width:768px) {
       .modalLayer .layerContent {
         width: auto
       }
     }
-    
+
     .modalLayer[show] {
       width: auto;
       height: auto
     }
-    
+
     .modalLayer[show] .bg {
       opacity: 1;
       visibility: visible
     }
-    
+
     .modalLayer[show] .layerContent {
       opacity: 1;
       visibility: visible;
@@ -410,9 +411,13 @@
       <div class="bg"></div>
     </div>
   </div>
+  
+  
   <script type="text/javascript" src="/manifest.js"></script>
   <script type="text/javascript" src="/vendor.js"></script>
   <script type="text/javascript" charset="utf-8"  src="/pages/galeria.chunk.js"></script>
+<script  src="https://www.google-analytics.com/analytics_debug.js"></script>
+<script  src="src/assets/js/lib/autotrack.js"></script>
 
   <script type="text/javascript" src="/main.js"></script>
 
