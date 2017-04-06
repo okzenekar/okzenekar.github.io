@@ -1,5 +1,5 @@
 var eventBus = {
-  install: function (Vue, options) {
+  install: function (Vue) {
     Vue.prototype.eb = new Vue()
   }
 };

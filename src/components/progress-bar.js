@@ -1,5 +1,5 @@
 export default function progressBar (options) {
-  var containerWidth = x => options.container.offsetWidth;
+  var containerWidth = () => options.container.offsetWidth;
   var eventHandler = function (e) {
     if (
       (e.type === 'touchmove') ||
@@ -7,7 +7,7 @@ export default function progressBar (options) {
       (e.type === 'click')
     ){
       var x = e.clientX - Math.floor(options.container.getBoundingClientRect().left),
-          max = containerWidth();
+        max = containerWidth();
 
       if (x >= 0 && x <= max) {
         options.pointer.style.left = x + 'px';

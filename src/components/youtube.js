@@ -3,7 +3,7 @@ var loaded = false;
 var loadApi = new Promise (function (resolve) {
   if (!loaded){
     var tag = document.createElement('script'),
-        firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag = document.getElementsByTagName('script')[0];
 
     tag.src = "https://www.youtube.com/iframe_api";
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);

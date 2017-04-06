@@ -134,9 +134,9 @@
       },
       prev () {
         var activeSong = this.getActiveSong(),
-            nextSong = this.playList.indexOf(activeSong) 
-            ? this.playList[this.playList.indexOf(activeSong) - 1] 
-            : this.playList[this.playList.length -1];
+          nextSong = this.playList.indexOf(activeSong) 
+          ? this.playList[this.playList.indexOf(activeSong) - 1] 
+          : this.playList[this.playList.length -1];
 
         this.activeTabIndex = this.tabIndex = nextSong.tabIndex;
         this.activeSongIndex = nextSong.songIndex;
@@ -144,9 +144,9 @@
       },
       next () {
         var activeSong = this.getActiveSong(),
-            nextSong = this.playList.indexOf(activeSong) < this.playList.length -1
-            ? this.playList[this.playList.indexOf(activeSong) + 1] 
-            : this.playList[0];
+          nextSong = this.playList.indexOf(activeSong) < this.playList.length -1
+          ? this.playList[this.playList.indexOf(activeSong) + 1] 
+          : this.playList[0];
             
         this.activeTabIndex = this.tabIndex = nextSong.tabIndex;
         this.activeSongIndex = nextSong.songIndex;
@@ -154,8 +154,8 @@
       },
       formatTime (time) {
         var seconds = Math.floor(time / 1000),
-            minutes = Math.floor(seconds / 60),
-            remainingSeconds = seconds % 60;
+          minutes = Math.floor(seconds / 60),
+          remainingSeconds = seconds % 60;
 
         return this.pad(minutes, 2) + ':' + this.pad(remainingSeconds, 2);
       },
@@ -245,8 +245,8 @@
           cb: function (percent) {
             //console.log(percent);
             if (self.activeSong){
-                self.activeSong.setVolume(self.logCalc(percent));
-                self.volume = percent;
+              self.activeSong.setVolume(self.logCalc(percent));
+              self.volume = percent;
             }
           }
         });

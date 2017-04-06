@@ -33,7 +33,7 @@ export default {
     index (x) {
       this.innerIndex = x;
     },
-    innerIndex (x) {
+    innerIndex () {
       this.$emit('index', this.index)
     }
   },

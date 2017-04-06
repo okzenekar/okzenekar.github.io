@@ -18,18 +18,18 @@ export default {
     }
   },
   methods: {
-    openEvent (e) {
+    openEvent () {
       //console.log('openEvent');
       this.eb.$emit('modal-open', {modalId: this.modalId})
       
     },
-    closeEvent (e) {
+    closeEvent () {
       //console.log('closeEvent');
       this.eb.$emit('modal-close', {modalId: this.modalId})
     },
     removeListeners () {
-       this.eb.$off('modal-open');
-       this.eb.$off('modal-close');
+      this.eb.$off('modal-open');
+      this.eb.$off('modal-close');
     },
     addListeners () {
       this.eb.$on('modal-open', e => {
