@@ -1,40 +1,55 @@
 <template>
   <div class="inner article">
     <div class="row">
-      <div class="columns small-12 medium-12 desktop12">
-        <strong>Zenekar esküvőre, avagy milyen az ideális esküvői zenekar?</strong><br>
-        <br>
-        <strong>Kedves Ifjú Párok!</strong><br>
-        <img alt="" class="left" src="~root/assets/img/cycle/img2.jpg">Esküvő… Amikor meghalljuk ezt a szót, mindannyiunknak egy csodálatos esemény jut az eszébe. Kevés meghatóbb dolog van az életben annál, mint amikor két ember – családjuk és barátaik körében – örök hűséget fogadnak egymásnak. A ceremóniát követő ünnepi vacsora után viszont a szórakozásé a főszerep, de ehhez mindenképpen szükség van egy olyan esküvői zenekar-ra, amely megfelelő hangulatot tud teremteni az est további részében.<br>
-        <br>
-        A zenekar esküvőre történő kiválasztása nagy körültekintést igényel, és talán az egyik legnehezebb feladat is egyben. Mert lehet aznap rossz az idő, esetleg nem úgy sikerül a dekoráció, ahogy szerettétek volna, de tíz év távlatából mégsem erre fogtok majd emlékezni, sokkal inkább arra, hogy milyen volt a hangulat. Az esküvői zenekar szerepe rendkívül fontos, és ha ebben a kérdésben mellényúltok, az a helyszínen már késő bánat! A színvonalas zene és a jó hangulat, képes feledtetni a bosszantó körülményeket!<br>
-        <br>
-        <img alt="" class="right" src="~root/assets/img/cycle/gallery_39.jpg">A zenekar esküvőre való kiválasztásánál először is döntsétek el, milyen stílusú esküvőt szeretnétek, illetve, hogy zenekart vagy DJ-t szerződtettek-e? Sokan azért választanak lemezlovast, mert lényegesen olcsóbb, mint egy zenekar, emellett nincs akkora helyigénye, ráadásul szinte bármilyen számot le tud játszani, ugyanakkor az élőzenének különleges hangulata van, ami semmivel sem pótolható!<br>
-        <br>
-        Bármilyen esküvőt terveztek, a zenekar esküvőre történő kiválasztásnál vegyétek figyelembe vendégeitek igényeit is, végtére is nem csak magatoknak rendezitek a lagzit. Írjatok költségvetést, mire mennyi pénzt szántok! Sokat lehet spórolni egyes nem annyira fontos dolgokon, mint például, hogy mi legyen a desszert vagy hány emeletes legyen a torta, a lényeg, hogy sose a zenekaron kezdjétek a spórolást!<br>
-        <br>
-        Amikor az ideális esküvői zenekar után kutattok, legelőször is érdemes körbekérdeznetek az ismerősöket, van-e valakinek valami jó ötlete. Aztán ott van az internet, ahol számos ilyen jellegű gyűjtőoldalt találhattok (zenekar.lap.hu; partyzenekar.lap.hu, eskuvoi-zene.lapozz.hu), innen több száz együttes bemutatkozó oldala elérhető. Fórumozzatok, rengeteg jó és rossz tapasztalatot olvashattok a zenekarokról, ez is nagy segítség lehet.<br>
-        <br>
-        Az első kontaktus a szolgáltatóval, a honlapja. Legyetek kritikusak, egy weboldal sokat elárul gazdájáról és a szolgáltatás minőségéről! Aki igényes képet fest önmagáról, az nagy valószínűséggel a munkájához is hasonlóképpen áll.<br>
-        <br>
-        <img alt="" class="left" src="~root/assets/img/cycle/gallery_02.jpg">A lényeg – a többi szolgáltatóhoz hasonlóan – az esküvői zenekarok estében is a részletekben rejlik; ilyen például a honlap minősége, a bemutatkozó anyagok színvonala , a zenekarvezető kommunikációja, a repertoár színessége, az együttes megjelenése, felszerelése, előadásmódja és nem utolsó sorban, alkalmazkodó készsége. Ma már, amikor zenekart esküvőre kerestek, semmilyen garanciát nem kaptok minőség tekintetében, attól, hogy hány fős a zenekar. A mai hangszeres- technikai fejlődés mellett következő dolgok határozzák meg a zenei minőséget: az éneklés, az énekhangok minősége, a hangszerek professzionális kezelése, azaz a tényleges hangszeres tudás, és hogy hogyan szólalnak meg összességében, egységben a dalok.<br>
-        <br>
-        <img alt="" class="right" src="~root/assets/img/cycle/img11.jpg">Legyünk őszinték, az esküvői zenekar-ok tagjai 90%-ban nem főállású zenészek. Könnyű belátni, hogy egy 5-8 tagú zenekar professzionális megszólaltatásához, műsorához heti minimum 3 próba kellene, ami a gyakorlatban legtöbbször nem valósul meg. Ezért sokkal könnyebb egy 2 személyből álló duónak elérni azt a minőséget, összehangolni azt a repertoárt, azt a megszólalást, amire a megrendelők vágynak. Ezzel csak annyit szerettem volna bizonyítani, hogy sokkal több a jó minőségű duó, mint a 6-8 főből álló nagy esküvői zenekar. Vannak ugyan nagyon jól megszólaló 6-8 tagú zenekarok, de minimum 5-6 szoros áron! Itt is igaz, mint annyi más területen, hogy ha zenekart esküvőre kerestek, magas minőséget olcsón nem fogtok kapni. Hosszú évek tapasztalata mondatja velem, hogy amikor el kezditek szervezni az esküvőtöket, ne a zenekart hagyjátok utoljára, mert a jó zenekarokat hamarabb, már jó előre lefoglalják! Hagyatkozzatok az érzékeitekre, igényeitekre, és ha valami tetszik, ahhoz ragaszkodjatok, ha tehetitek fizessétek meg- mert így lesztek elégedettek!<br>
-        <br>
-        Összefoglalva: az ideális esküvői zenekar önmagára igényes, megfelelő információs anyagokkal rendelkezik, rugalmas és alkalmazkodik a megrendelők, valamint a közönség igényeihez, megnyerő, van kisugárzása, jól öltözött, színvonalas előadást nyújt, többen is énekelnek a csapatban, széles repertoárral rendelkezik és van esküvői tapasztalata. Kedves Ifjú Párok!<br>
-        <br>
-        A számotokra legideálisabb zenekar esküvőre történő kiválasztásához kívánunk sok sikert, az esküvői mulatságon pedig fergeteges hangulatot, jó szórakozást!
+      <div class="columns small-12 medium-12 desktop-12">
+        <h1 class="custom-title">Zenekar esküvőre - avagy, hogyan alapozzuk meg a buli hangulatát?</h1>
+        <br/>
+        <div class="article-video">
+          <youtube-video id="NICuQWTwGzY"></youtube-video>
+        </div>
+        <h2>Mulatós zenekar esküvőre, az exkluzív és elegáns bulik állandó résztvevője </h2>
+        <p>Egyedülálló hangulatot szeretnétek, melyre a későbbiek folyamán is emlékezni fognak az ismerősök, családtagok? Nos, akkor a mulatós zenekar esküvőre és bulikba a tökéletes választás. Hogy miért? Sokszor a párok ár alapján választják meg azt, hogy milyen zene szóljon a jeles napon. Ilyenkor mindig azt javasoljuk, hogy érdemes mérlegelni… Egy zenekar esküvőre sokkal jobb választás, mint egy lemezlovas, hisz itt megjelenik az élő zene varázsa és ennek a hangulata 10 év múlva is maradandó emlék marad mind az ifjú pár, mind a násznép és ismerősök számára. </p>
+        <p>Egy zenekar esküvőre történő kiválasztásakor fontos, hogy ne csak a Ti egyéniségeteket tükrözze a kiválasztott stílus, hanem vegyétek figyelembe a vendégek igényeit, hiszen nem csak magatoknak rendezitek a bulit. A mulatós zenekar esküvőre egy igazán fergeteges lagzi kiváló eszköze, éppen ezért fontos, kihangsúlyoznunk, hogy ezen nem érdemes spórolni, hisz azok a zenészek, akik a legjobb esküvői zenekarok közé tartoznak azok, akik garantáltan emlékezetes hangulatot teremtenek meg az ifjú pár és a násznép számára.</p>
+        <p>Köztudott, hogy egy profi 5-8 tagú zenekar esküvőre nem olcsó mulatság… Az is egyértelmű, hogy egy nagyobb létszámú zenekarnál jóval több előkészület és próba szükséges, mint egy duónál. Viszont egy profi duóból álló mulatós zenekar esküvőre sokkal könnyebben el tudja érni azt a minőséget, megszólaltatást, amire a megrendelők vágynak. A másik gyakran előforduló probléma, hogy a nagyobb létszámú zenekaroknál nehezebb összehozni a próbákat, így ennek következtében nem olyan széles a zenei paletta, mint egy duónál. </p>
       </div>
     </div>
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <router-link class="fullWidth" to="/repertoar" exact>Tekintse meg repertoárunkat! <span>&rarr;</span></router-link>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <img alt="Esküvői Zenekar" class="right" src="~root/assets/img/eskuvoi-zenekar.jpg">
+        <h2>Fergeteges hangulatú zenekar esküvőre?</h2>
+        <p>Olyan bulira vágytok, amit még évek múltán is emlegetni fognak? Akkor addig válogassatok, amíg meg nem találjátok a legjobb esküvői zenekarok egyikét. Tudjuk, hogy ezt könnyű mondani, de számos olyan tényező van a zenei tudás mellett, mely alapján ki lehet szűrni azt, hogy ki a profi zenekar. Egy jó honlap például olyan, mint az első benyomás egy találkozás során… Ha a bemutatkozó anyagok minőségiek és a tartalmak színvonalasak, akkor nem nyúlhatsz mellé. Ezen felül érdemes odafigyelni a zenekarvezető kommunikációjára, az együttes megjelenésére a felszerelésre és nem utolsó sorban az előadásmódra.</p>
+        <p>Hogyan találjátok meg a legjobb esküvői zenekarok egyikét? Kiváló lehetőség az ismerősök körbekérdezése, vagy akár régi esküvői bulis tapasztalatok alapján utánanézni a mulatós zenekaroknak. Interneten is számos gyűjtőoldal létezik, ahol rengeteg party zenekar, mulatós esküvői zenekar elérhető bemutatkozó oldallal és számos egyéb tartalommal. De jó opciók lehetnek a fórumos oldalak is, ahol mindenki megosztja egymással jó és rossz tapasztalatát az esküvői zenekarokkal kapcsolatban.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <img alt="Zenekar Esküvőre" class="left" src="~root/assets/img/zenekar-eskuvore.jpg">
+        <p class="first">Sajnos manapság nincs garancia arra még így sem, hogy megtaláljátok az igazit, éppen ezért érdemes elmenni egy fellépésre, vagy egy próbára, ahol élőben is meghallgathatjátok a kiválasztott esküvői zenekart. </p>
+        <p>A mai hangszeres technikai fejlődés mellett a következő dolgok határozzák meg a zenei minőséget: az éneklés, az énekhangok minősége, a hangszerek professzionális kezelése, illetve azt, hogy hogyan szólalnak meg egységében. A személyes találkozó során tegyük próbára a zenekart és zenei ízlésünknek megfelelő számot kérjünk, akár több stílusban. Így valóban megbizonyosodhatunk arról, hogy megtaláltuk- e a legjobb esküvői zenekarok egyikét?</p>
+        <p>Számunkra fontos, hogy zenei téren minden igényt kielégítsünk. Egy mulatós zenekar nem feltétlenül csak a hagyományos mulatóst játssza. Célunk, hogy a legjobb esküvői zenekarok közé tartozzunk, éppen ezért folyamatosan képezzük magunkat. Szakmai munkánk minőségét a folyamatos megújulás igénye biztosítja.
+          Sokszínű zenei repertoárunkban széles választékban megtalálható a magyar, a külföldi, az instrumentális és a mulatós zene is, melyeket a buli hangulatának megfelelően váltogatunk. </p>
+        <p>Mi segítünk, hogy a lagzitok örök emlék maradjon… Ha Ti is olyan zenekart kerestek, akik számára a zenélés szenvedély, megbízhatóak és garantáltan jó hangulatot teremtenek bármilyen buliról is legyen szó, akkor vedd fel velünk a kapcsolatot elérhetőségeink egyikén!</p>
+      </div>
+    </div>
+    <contact-form></contact-form>
   </div>
 </template>
 
 <script>
 import pageArticle from 'root/components/page-article.vue';
+import contactForm from 'root/components/contact-form.vue';
+import youtubeVideo from 'root/components/youtube-video.vue';
 export default {
   name: 'article-wedding',
   components: {
-    pageArticle
+    pageArticle,
+    youtubeVideo,
+    contactForm
   }
 }
 </script>

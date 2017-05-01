@@ -1,9 +1,9 @@
 <template>
   <div id="content">
-    <div class="inner">
+    <div class="inner" v-show="articleCheck">
       <h2>{{subTitle}}</h2>
     </div>
-    <router-view :title="test"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -14,11 +14,19 @@
     data () {
       return {
         message: 'Welcome to Your Vue.js App',
-        test: 'test'
+        articleCheck: false,
+      }
+    },
+    methods: {
+      checkRoute (x) {
+        this.articleCheck = x.data.category ? false : true;
       }
     },
     created () {
-      console.log(this.message);
+      this.eb.$on('route-change', this.checkRoute);
+    },
+    destroyed () {
+      this.eb.$off('route-change', this.checkRoute);
     }
   }
 </script>

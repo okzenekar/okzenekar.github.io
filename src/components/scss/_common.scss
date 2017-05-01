@@ -20,27 +20,16 @@ ul{
     }
 }
 
+.text-center{
+  text-align: center;
+}
+
 .dn {
   position: absolute;
   left: -10000px;
 }
 body {
   background: $gray;
-}
-h1 {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: $gray;
-  text-align: center;
-  font-size: 30px;
-  line-height: 50px;
-  text-transform: uppercase;
-  span {
-    color: $peach;
-  }
 }
 ul.list {
   margin: 0;
@@ -64,7 +53,7 @@ ul.list {
     }
   }
 }
-h2 {
+h2, .custom-title {
   background: $peach;
   color: $gray;
   margin-bottom: 20px;

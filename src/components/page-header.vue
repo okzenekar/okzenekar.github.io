@@ -4,7 +4,7 @@
     <nav ref="nav" :show="show">
       <template v-for="route in routes">
         <router-link v-if="!route.sub" ref="links" :to="route.path" exact>{{route.data.linkName}}</router-link>
-        <div class="sub" v-else>
+        <div class="sub" :class="{ active: isSub }" v-else>
           <span class="categoryTitle">{{route.sub}}</span>
           <div class="categoryLinks">
             <router-link v-for="subRoute in route.links" ref="links" :to="subRoute.path" exact>{{subRoute.data.linkName}}</router-link>
@@ -12,7 +12,7 @@
         </div>
       </template>
     </nav>
-    <h1><span>O</span>k<span>z</span>enekar</h1>
+    <h3><span>O</span>k<span>z</span>enekar</h3>
   </div>
 </template>
 
@@ -24,7 +24,8 @@
     data () {
       return {
         routes: this.createSubCategories(routes.slice()),
-        show: false
+        show: false,
+        isSub: false,
       }
     },
     methods: {
@@ -50,6 +51,7 @@
             links: temp[key]
           })
         });
+        routes = routes.filter(x => !(x.data && x.data.skipMenu))
         return routes;
       },
       getMenuHeight () {
@@ -83,14 +85,20 @@
         } else {
           this.hideMenu();
         }
+      },
+      handleRouteChange (x) {
+        if (this.show && window.innerWidth < 1024){
+          this.hideMenu();
+        }
+        console.log(x);
+        this.isSub = x.data && x.data.category  ? true : false;
       }
     },
     created () {
-      this.$router.afterEach(() => {
-        if (this.show&& window.innerWidth < 1024){
-          this.hideMenu();
-        }
-      });
+      this.eb.$on('route-change', this.handleRouteChange);
+    },
+    destroyed () {
+      this.eb.$off('route-change', this.handleRouteChange);
     }
   }
 </script>
@@ -143,6 +151,9 @@
         span {
           display: none;
         }
+        &.active{
+          background: $blue;
+        }
       }
       a {
         display: block;
@@ -173,10 +184,22 @@
         position: relative;
         z-index: 2;
       }
-      h1 {
+      h3 {
+        position: absolute;
         z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: $gray;
+        text-align: center;
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: uppercase;
+        span {
+          color: $peach;
+        }
       }
-      h1 {
+      h3 {
         position: relative;
         margin: 20px 0;
         color: $black;

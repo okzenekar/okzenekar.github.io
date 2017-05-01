@@ -1,46 +1,70 @@
 <template>
-  <page-article>
+  <div class="inner article">
     <div class="row">
-      <div class="columns small-12 medium-12 desktop12">
-        <strong>Az OK Zenekar tanácsai lakodalmas zenekar választáshoz</strong><br>
-        <br>
-        <strong>Kedves házasulandó Ifjú Párok!</strong><br>
-        <img alt="" class="left" src="~root/assets/img/cycle/img2.jpg"> Mi, a szekszárdi OK Zenekar lakodalmas zenekarként közel 30 éves tapasztalattal és rutinnal, de töretlen lelkesedéssel, odafigyeléssel játszunk esküvőkön, lakodalmakban Nektek, Ifjú Pároknak és kedves vendégeiteknek. Kevés lakodalmas zenekarban játszó zenész mondhatja el magáról, hogy lejátszott lakodalmainak a száma közelíti az 1000-et. Lakodalmas zenekarként, ahogy mondani szokták, nemcsak Tolnát-Baranyát, hanem szinte az egész országot, sőt külföldet is bejártuk már. Utóbbi években legtöbbet Budapesten és agglomerációjában zenéltünk. Többször felléphettünk ismert sztárokkal és nem egyszer mi szolgáltattuk a számukra kíséretet – TNT, Demjén Rózsi, Gáspár Laci, Caramel, Auth Csilla, Hevesi Tamás, Fekete Dávid, Kökény Attila, Irigy Hónalj Mirigy, Illényi Katica… Volt szerencsénk zenénkkel szórakoztatni híres, közéleti politikusokat, médiaszereplőket, sztárokat, nevesíteni nincs módunkban őket, mert szerződést illetve személyiségi jogokat sértenénk vele.<br>
-        <br>
-        <img alt="" class="right" src="~root/assets/img/cycle/gallery_39.jpg">A lakodalom sikerét, jó hangulatát alapjaiban határozza meg a lakodalmas zenekar minősége! Nem véletlenül mondják: „Jó lakodalmat akarsz, válassz egy jó zenekart és egy jó szakácsot!” Ha belegondolunk, ez tényleg nagy igazság, mert nem mindegy, hogy hogy esik az embereknek a felkínált étel, és hogy mit hallgatnak egész éjjel, 8-12 órán át.<br>
-        <br>
-        Kedves Ifjú párok! Azt kell mondanunk, hogy ezen a két területen, ha tehetitek, ragaszkodjatok a minőséghez, az elérhető legjobbhoz, mert megérdemlitek!<br>
-        <br>
-        <img alt="" class="left" src="~root/assets/img/cycle/gallery_02.jpg"> A lakodalom egy különleges családi-baráti-rokoni esemény, ahol minden generáció, (a topogó kisgyerektől a szép korú dédpapáig), a legkülönfélébb zenei igényekkel érkezve, de együtt ünnepelve akarja jól érezni magát. Persze minden lakodalom más és más, nincs kettő egyforma. Van olyan násznép, aki mulatósabb, majd, kirúgja a ház oldalát, vannak akik szívesebben beszélgetnek, és szeretik a finom aláfestő instrumentális zenét, van ahol sok a kisgyerek, akkor nekik külön is kedvezünk, vannak akik a tánczenét, vannak akik a mulatóst favorizálják. Ezért nagyon fontos, hogy a lakodalmas zenekar szenzitív zenekar is legyen, azaz képes legyen könnyedén és azonnal a reagálni a násznép reakcióira, kéréseire, így „húzva fel” folyamatosan a hangulatot. Erre a gyors reagálásra csak az a lakodalmas zenekar képes, aki kivételes széles repertoárral rendelkezik a legkülönfélébb műfajokból, aki nincs korlátozva a szűkös repertoár, az egyoldalú zenei hangzás miatt.<br>
-        <br>
-        <img alt="" class="right" src="~root/assets/img/cycle/img11.jpg">Minden lakodalmas zenekar egyben jól működő, megbízható szolgáltató és partner is. Aki korrektül köti a szerződéseket, betartja az abban foglaltakat, pontos, becsületesen kezeli a pénzügyeket, illendően viselkedik. Jól együtt működik a lakodalomban részt vevő más szolgáltatókkal, az esküvőszervezővel, a vőféllyel, ceremóniamesterrel, a konyhai személyzettel, a pincérekkel, a fotóssal-videóssal, szóval a zenészeknek igazi csapatjátékosok is!<br>
-        <br>
-        <strong>Összegzésül írnék pár dolgot, amit érdemes szem előtt tartani, ha az ember lakodalmas zenekar választására adja fejét:</strong>
-        <ul class="list">
-          <li>Zeneileg a lehető legjobban szóljanak a dalok, mind hangszerek, mind énekek tekintetében, függetlenül attól, hogy hány tagú a zenekar, (mert egy 4-5 fős csapat is tud csapnivalóan megszólalni,de 2-3 fő is tud profi hangzást nyújtani, szóval a minőség nem a zenekari tagok számától, sokkal inkább a zenei tudásuktól függ!)</li>
-          <li>Lehetőleg kevés szünetet tartsanak.</li>
-          <li>Alkalomhoz illően jelenjenek meg és viselkedjenek.</li>
-          <li>Széles repertoárnak és stílusoknak köszönhetően minden korosztálynak tudjanak játszani.</li>
-          <li>Zenéljenek úgy, hogy fergetegesen érezze magát mindenki, s így olyan legyen a lakodalom, amilyet mindig is szeretettek volna.</li>
-        </ul><br>
-        Mi ilyenek vagyunk! A Ti nagy napotok a mi nagy napunk is, ahol ezekre a feladatokra koncentrálva, professzionálisan állunk helyt!<br>
-        <br>
-        Kedves Ifjú Párok!<br>
-        Válasszatok jól!<br>
-        <br>
-        Üdvözlettel:<br>
-        OK Zenekar, egy nagy tapasztalatú lakodalmas zenekar
+      <div class="columns small-12 medium-12 desktop-12">
+        <h1 class="custom-title">Party zenekar – avagy, hogyan csinálunk fergeteges buli hangulatot?</h1>
+        <br/>
+        <img alt="Retro Party Zenekar" class="left" src="~root/assets/img/retro-party-zenekar.jpg">
+        <h2>Mulatós zenekar esküvőre, az exkluzív és elegáns bulik állandó résztvevője </h2>
+        <p>Mi, a szekszárdi OK Zenekar tagjaiként elmondhatjuk, hogy közel 30 éves tapasztalattal rendelkezünk és számos bulin, rendezvényen vettünk részt, mint party zenekar. Éppen ezért fontos számunkra a kiváló minőség és az, hogy töretlen lelkesedéssel és odaadással játsszunk a felhőtlen partyhangulat megteremtése érdekében. Az ország egész területén, illetve külföldön is többször felléptünk már, így rengeteg helyen megtapasztalhattuk az igazi fergeteges party hangulatát. Többször volt szerencsénk híres magyar sztárokkal fellépni és nem egyszer mi szolgáltattuk a kíséretet.
+        <p>Gondoltátok volna, hogy a buli hangulatát jelentős mértékben befolyásolja a zene? A party zenekarok többségének fix repertoárja van, nem akar megújulni. Mi retro party zenekar-ként törekszünk arra, hogy minden korosztály számára megteremtsük a felhőtlen buli hangulatát, így igény szerint a retro zenéktől kezdve a mai slágerekig bármilyen zenét eljátszunk a vendégek szórakoztatása érdekében.ekében.</p>
       </div>
     </div>
-  </page-article>
+    <div class="row text-center">
+      <div class="columns small-12 medium-12 desktop-12">
+        <h2 class="block">Miért minket válasszatok, mint party zenekar?</h2>
+        <p>Nos, azzal kapcsolatban, hogy melyik party zenekar illik bele a buli stílusába, vagy kit válasszunk, mindig megoszlanak a vélemények. Sokszor ezért a csapatépítő /céges party/ esküvő szervezője inkább a lemezlovas mellett dönt, pedig az élő zene egyszeri és megismételhetetlen, aminek a hangulatát a lemezlovas nem tud visszaadni. Ráadásul a party sikerét nagymértékben befolyásolja az is, hogy milyen zene szól 8-12 órán keresztül.
+        <p>Mi, mint élőzenés party zenekar azt az egyszeri és megismételhetetlen élményt képviseljük, amit csak ott a helyszínen résztvevők élhetnek át a különleges előadásnak és a szórakoztató elemeknek köszönhetően. Biztosítjuk megrendelőink számára az egész estés fergeteges party hangulatot! latot!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <router-link class="fullWidth" to="/repertoar" exact>Tekintse meg repertoárunkat! <span>&rarr;</span></router-link>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <p>Egy party zenekar esküvőre, céges bulira történő kiválasztásakor számos olyan tényező van, amit érdemes figyelembe vennetek a végső döntés meghozatala előtt. Első körben mindig azt javasoljuk, hogy kérdezzetek körbe az ismerősök között, hiszen ennél jobb referencia nincs, mint az ők véleménye. Ezen kívül számos gyűjtőoldal áll rendelkezésre, ahol megtalálhatjátok a legjobb party zenekarok egyikét. Ha kiválasztottátok az igazit, akkor mindig pontosan nézzetek utána a referenciáknak, hallgassatok bele 1-2 számba, amiből már nagyjából le lehet szűrni, hogy mennyire felel meg az adott party zenekar az igényeteknek. Sajnos manapság nincs garancia arra még így sem, hogy megtaláljátok az igazit, éppen ezért érdemes elmenni egy fellépésre, vagy egy próbára, ahol élőben is meghallgathatjátok a kiválasztott party zenekart, ahol bemutatják élőben saját repertoárjukat. Ilyenkor törekedjetek arra, hogy minél változatosabb stílust ismerjetek meg, hiszen ebből derül ki igazán a szakmaiság és a profizmus. </p>
+        <p>A másik nem elhanyagolandó tényező az ár. Az élő zenekarok ugyan többe kerülnek, mint egy lemezlovas, viszont az élőzene hangulata egyszeri és megismételhetetlen. Itt nem pusztán a zenéről, hanem a szórakoztatásról is beszélünk. Viszont az tény, hogy minél nagyobb létszámú a zenekar, annál nagyobb az összeg is. Nagyobb létszám esetén további felmerülő probléma a próbák összeegyeztetése vagy a személyes egyeztetés összehangolása céges party/ esküvő előtt. Ennek következtében sokszor nem olyan széles a zenei paletta, mint egy duónál… Viszont egy profi duóból álló party zenekar, mint az OK Zenekar sokkal könnyebben el tudja érni azt a minőséget, megszólaltatást, amire a megrendelők vágynak.</p>
+        <img alt="Céges Party" class="right" src="~root/assets/img/ceges-party.jpg">
+        <p>A party hangulatát egyértelműen a zene határozza meg. Így ha az lapos, unalmas, akkor a legprofibb partyszervező sem tudja felrázni a közönséget. Számunkra alapvető, hogy azon felül, hogy profin játszunk, a szórakoztatáshoz is értsünk, így biztosítva az egész estés vidám bulihangulatot!</p>
+        <p>Minden szórakoztatásért felelős zenekar egyben jól működő, megbízható szolgáltató partner is: Korrektül köti a szerződéseket, betartja az abban foglaltakat, pontos, becsületesen kezeli a pénzügyeket, és illendően viselkedik. Jól együtt tud működni a buliban részt vevő más szolgáltatókkal, a rendezvényszervezővel, a konyhai személyzettel, a pincérekkel, a fotóssal-videóssal- tehát a zenészek igazi csapatjátékosok is...Pont, mint mi!</p>
+        <br /><br />
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="columns small-12 medium-12 desktop-12">
+        <h2 class="block">Tehát a következő tényezőkre érdemes odafigyelni a party zenekar kiválasztásánál:</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <ul class="list">
+          <li>Zeneileg a lehető legjobban szóljanak a dalok, mind a hangszerek, mind az énekek tekintetében, függetlenül attól, hogy hány tagú a zenekar. A minőség nem a zenekari tagok számától függ.</li>
+          <li>Lehetőleg kevés szünetet tartsanak, ne hagyják lankadni a közönséget!</li>
+          <li>Alkalomhoz illően jelenjenek meg és viselkedjenek.</li>
+          <li>Olyan széles legyen a repertoárjuk, hogy kortól és nemtől függetlenül mindenki jól érezze magát!</li>
+          <li>A zene minősége mellett gondoskodjanak a megfelelő party hangulatról is!</li>
+          <li>És nem utolsó sorban jól működjenek együtt csapatban, hiszen akkor lesz igazán lehengerlő az előadás!</li>
+        </ul>
+        <br/>
+        <p>Mi, az OK Zenekar tagjaiként közel 30 éves tapasztalattal a hátunk mögött igyekszünk maximálisan kielégíteni a megrendelők igényeit és törekedni arra, hogy a legjobb minőségű élő zene mellett a felhőtlen jó kedvért is gondoskodjunk. Garantáljuk a fergeteges hangulatot és felrázzuk a legpasszívabb közönséget is! Ha egy igazán önfeledt és színes partyra vágytok, akkor keressetek minket bátran elérhetőségeink egyikén!</p>
+      </div>
+    </div>
+    <contact-form></contact-form>
+  </div>
 </template>
 
 <script>
 import pageArticle from 'root/components/page-article.vue';
+import contactForm from 'root/components/contact-form.vue';
+import youtubeVideo from 'root/components/youtube-video.vue';
 export default {
   name: 'article-party',
   components: {
-    pageArticle
+    pageArticle,
+    youtubeVideo,
+    contactForm
   }
 }
 </script>

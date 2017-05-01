@@ -5,6 +5,7 @@
     <page-content :sub-title="subTitle"></page-content>
     <page-contact></page-contact>
     <page-audio></page-audio>
+    <page-footer></page-footer>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import pageHeader from 'root/components/page-header.vue';
 import pageContact from 'root/components/page-contact.vue';
 import pageContent from 'root/components/page-content.vue';
 import pageAudio from 'root/components/page-audio.vue';
+import pageFooter from 'root/components/page-footer.vue';
 import ga from 'root/components/ga';
 
 export default {
@@ -36,7 +38,8 @@ export default {
     pageHeader,
     pageContact,
     pageContent,
-    pageAudio
+    pageAudio,
+    pageFooter
   }
 }
 </script>

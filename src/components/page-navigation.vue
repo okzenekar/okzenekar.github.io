@@ -18,9 +18,11 @@
       updateMeta () {
         this.$router.afterEach(hook => {
           var temp = this.routes.filter(x => [x.path, x.path + '/'].indexOf(hook.path) !== -1 )[0];
-          this.$title.innerHTML = temp.data.linkName;
+          this.$title.innerHTML = temp.data.title || temp.data.linkName;
           this.$description.setAttribute('content', temp.data.metaDesc);
           this.$emit('route-change', temp);
+          this.eb.$emit('route-change', temp);
+          window.scrollTo(0, 0);
         })
       }
     },
