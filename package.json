@@ -12,6 +12,7 @@
     "build-demo": "browser-sync start --port 3000 --server dist"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "vue": "^2.1.0"
   },
   "devDependencies": {

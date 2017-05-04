@@ -9,7 +9,7 @@ var opinions = r => require.ensure([], () => r(require('./pages/opinions.vue')),
 var partners = r => require.ensure([], () => r(require('./pages/partners.vue')), 'partnereink');
 var repertoire = r => require.ensure([], () => r(require('./pages/repertoire.vue')), 'repertoar');
 var video = r => require.ensure([], () => r(require('./pages/video.vue')), 'velemenyek');
-var contact = r => require.ensure([], () => r(require('./pages/contact.vue')), 'velemenyek');
+var contact = r => require.ensure([], () => r(require('./pages/contact.vue')), 'kapcsolat');
 
 var routes = [
   {
