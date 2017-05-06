@@ -1,5 +1,5 @@
 <template>
-  <form class="contact-form">
+  <form ref="base" class="contact-form">
     <div class="row">
       <div class="columns small-12 medium-12 desktop-12">
         <h2 v-if="title">Kapcsolat</h2>
@@ -136,7 +136,8 @@
         });
       },
       flashMsg () {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0) + this.$refs.base.getBoundingClientRect().top);
+
         this.flash = true;
         setTimeout(() => {
           this.flash = false;
@@ -159,6 +160,7 @@
       }
     },
     mounted () {
+      window.asd = this.flashMsg;
       this.loadCaptcha('https://www.google.com/recaptcha/api.js?hl=hu&render=explicit').
         then(() => {
           this.captchaId = window.grecaptcha.render(this.$refs.captcha, {
