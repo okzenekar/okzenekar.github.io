@@ -118,7 +118,7 @@
       handleSubmit () {
         console.log('submit');
         this.error = false;
-        axios.post('http://vbox:4000/mail', Object.assign(this.model, {
+        axios.post('https://floating-oasis-22438.herokuapp.com/mail', Object.assign(this.model, {
           captcha: window.grecaptcha.getResponse(this.captchaId)
         }))
         .then(response => {
