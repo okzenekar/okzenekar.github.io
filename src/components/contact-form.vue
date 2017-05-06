@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="flash" v-if="flash">Üzeneted elküldtük.</div>
-    <div class="error" v-if="error">A mezők kiteöltése kötelező.</div>
+    <div class="error" v-if="error">{{errorMsg}}</div>
     <div class="row">
       <div class="columns small-12 medium-2 desktop-2">
         <label for="name">Név</label>
@@ -74,12 +74,13 @@
       return {
         flash: false,
         error: false,
+        errorMsg: '',
         model: {
           name: '',
           email: '',
           subject: '',
           message: '',
-          grecaptcha: '',
+          captcha: '',
         }
       }
     },
@@ -95,7 +96,7 @@
           script.src = url;
 
           script.addEventListener('load', function() {
-            console.log('error:', url, 'load failed');
+            console.log('success:', url);
           }, false);
 
           script.addEventListener('error', function() {
@@ -117,20 +118,43 @@
         console.log('submit');
         this.error = false;
         axios.post('http://vbox:4000/mail', Object.assign(this.model, {
-          grecaptcha: window.grecaptcha.getResponse()
+          captcha: window.grecaptcha.getResponse()
         }))
         .then(response => {
           console.log('response', response);
-          window.scrollTo(0, 0);
-          this.flash = true;
-          setTimeout(() => {
-            this.flash = false;
-          },5000);
+          this.flashMsg();
+          this.formReset(true);
         })
         .catch(error => {
-          this.error = true;
           console.log('error', error);
+          console.log(error.response);
+
+          this.errorMsg = error.response.data;
+          this.error = true;
+          this.formReset();
         });
+      },
+      flashMsg () {
+        window.scrollTo(0, 0);
+        this.flash = true;
+        setTimeout(() => {
+          this.flash = false;
+        },5000);
+      },
+      formReset (full) {
+        //reset the form
+        if (full) {
+          Object.assign(this.model, {
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          })
+        }
+        Object.assign(this.model, {
+          captcha: '',
+        })
+        window.grecaptcha.reset()
       }
     },
     mounted () {
