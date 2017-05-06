@@ -82,42 +82,10 @@
     </div>
     <div class="row">
       <div class="eq0">
-        <strong>A mi napunk esküvői honlap:</strong>
-      </div>
-      <div class="eq1">
-        <div>
-          <div>
-            <a class="white_text" href="http://www.aminapunk.eu" target="_blank" title="Esküvői szolgáltatók árajánlatai, minden egy helyen">A Minapunk.eu - Esküvői szolgáltatók árajánlatai</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eq0">
         <strong>Esküvői fotó</strong>:
       </div>
       <div class="eq1">
         <a class="white_text" href="http://eskuvoifoto.lapunk.hu" target="_blank">Esküvői fotózás, esküvői fotós</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eq0">
-        <strong>eskuvopedia.hu</strong>:
-      </div>
-      <div class="eq1">
-        <div>
-          <a class="white_text" href="http://eskuvopedia.hu" target="blank">Esküvői szolgáltatók bemutatkozó cikkei</a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eq0">
-        <strong>honlapjai.hu</strong>:
-      </div>
-      <div class="eq1">
-        <div>
-          <a class="white_text" href="http://www.honlapjai.hu" target="blank">Honlapjai.hu katalógus</a>
-        </div>
       </div>
     </div>
     <div class="row">
