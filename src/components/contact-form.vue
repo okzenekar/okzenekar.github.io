@@ -74,6 +74,7 @@
       return {
         flash: false,
         error: false,
+        captchaId: null,
         errorMsg: '',
         model: {
           name: '',
@@ -118,7 +119,7 @@
         console.log('submit');
         this.error = false;
         axios.post('http://vbox:4000/mail', Object.assign(this.model, {
-          captcha: window.grecaptcha.getResponse()
+          captcha: window.grecaptcha.getResponse(this.captchaId)
         }))
         .then(response => {
           console.log('response', response);
@@ -159,9 +160,11 @@
     },
     mounted () {
       this.loadCaptcha('https://www.google.com/recaptcha/api.js?hl=hu&render=explicit').
-        then(() => window.grecaptcha.render(this.$refs.captcha, {
-          'sitekey' : '6LcIPyAUAAAAADiZaDMzPww9aNfDdRJPsyBqXpUb'
-        }));
+        then(() => {
+          this.captchaId = window.grecaptcha.render(this.$refs.captcha, {
+            'sitekey' : '6LcIPyAUAAAAADiZaDMzPww9aNfDdRJPsyBqXpUb'
+          })
+        });
     }
   }
 </script>
