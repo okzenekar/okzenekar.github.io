@@ -1,4 +1,5 @@
 require('es6-promise').polyfill();
+require('root/components/polyfills');
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -19,5 +20,6 @@ var root = new Vue({
   render: h => h(app)
 });
 
-root.$mount('#app')
+Object.assign({}, {a: 1})
 
+root.$mount('#app')
