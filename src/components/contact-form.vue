@@ -1,5 +1,13 @@
 <template>
   <form class="contact-form">
+    <div class="row">
+      <div class="columns small-12 medium-12 desktop-12">
+        <h2 v-if="title">Kapcsolat</h2>
+        <p class="desc">
+          Ajánlatkéréshez, és egyéb kérdésekhez kérjük töltsd ki a formot, vagy írj a <a href="mailto:okzenekar@gmail.com">okzenekar@gmail.com</a> címre.
+        </p>
+      </div>
+    </div>
     <div class="flash" v-if="flash">Üzeneted elküldtük.</div>
     <div class="error" v-if="error">A mezők kiteöltése kötelező.</div>
     <div class="row">
@@ -35,6 +43,15 @@
       </div>
     </div>
     <div class="row">
+      <div class="columns small-12 medium-2 desktop-2">
+        &nbsp;
+      </div>
+      <div class="columns small-12 medium-10 desktop-10">
+        <div ref="captcha"></div>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="columns small-12 medium-2 desktop-2">&nbsp;
       </div>
       <div class="columns small-12 medium-10 desktop-10">
@@ -47,6 +64,12 @@
   import axios from 'axios';
   export default {
     name: 'contact-form',
+    props: {
+      title: {
+        type: Boolean,
+        default: true
+      }
+    },
     data () {
       return {
         flash: false,
@@ -55,15 +78,47 @@
           name: '',
           email: '',
           subject: '',
-          message: ''
+          message: '',
+          grecaptcha: '',
         }
       }
     },
     methods: {
+      loadCaptcha (url) {
+        return new Promise((resolve, reject) => {
+          if (window.grecaptcha && window.grecaptcha.reset){
+            resolve()
+            return;
+          }
+          var script = document.createElement('script');
+
+          script.src = url;
+
+          script.addEventListener('load', function() {
+            console.log('error:', url, 'load failed');
+          }, false);
+
+          script.addEventListener('error', function() {
+            reject();
+            console.log('error:', url, 'load failed');
+          }, false);
+
+          document.body.appendChild(script);
+
+          var loop = setInterval(() => {
+            if (window.grecaptcha && window.grecaptcha.reset){
+              resolve();
+              clearInterval(loop);
+            }
+          },100);
+        })
+      },
       handleSubmit () {
         console.log('submit');
         this.error = false;
-        axios.post('http://vbox:4000/mail', this.model)
+        axios.post('http://vbox:4000/mail', Object.assign(this.model, {
+          grecaptcha: window.grecaptcha.getResponse()
+        }))
         .then(response => {
           console.log('response', response);
           window.scrollTo(0, 0);
@@ -78,6 +133,12 @@
         });
       }
     },
+    mounted () {
+      this.loadCaptcha('https://www.google.com/recaptcha/api.js?hl=hu&render=explicit').
+        then(() => window.grecaptcha.render(this.$refs.captcha, {
+          'sitekey' : '6LcIPyAUAAAAADiZaDMzPww9aNfDdRJPsyBqXpUb'
+        }));
+    }
   }
 </script>
 <style lang="scss">
@@ -118,6 +179,10 @@
       line-height: 20px;
       padding: 10px 20px;
       text-transform: uppercase;
+    }
+
+    p{
+      margin-bottom: 0;
     }
 
     .error,

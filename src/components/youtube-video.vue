@@ -25,7 +25,7 @@ export default {
       });
     },
     pauseVideo () {
-      this.video && this.video.pauseVideo();
+      this.video && this.video.pauseVideo && this.video.pauseVideo();
     }
   },
   created () {

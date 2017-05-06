@@ -1,7 +1,7 @@
 <template>
   <div id="content">
     <div class="inner" v-show="articleCheck">
-      <h2>{{subTitle}}</h2>
+      <h1 class="custom-title">{{subTitle}}</h1>
     </div>
     <router-view></router-view>
   </div>
