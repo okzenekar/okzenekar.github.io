@@ -12,7 +12,7 @@
         </div>
       </template>
     </nav>
-    <h3><span>O</span>k<span>z</span>enekar</h3>
+    <h3 class="main"><span>O</span>k<span>z</span>enekar</h3>
   </div>
 </template>
 
@@ -151,9 +151,6 @@
         span {
           display: none;
         }
-        &.active{
-          background: $blue;
-        }
       }
       a {
         display: block;
@@ -176,6 +173,21 @@
         }
       }
     }
+    h3 {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: $gray;
+      text-align: center;
+      font-size: 30px;
+      line-height: 50px;
+      text-transform: uppercase;
+      span {
+        color: $peach;
+      }
+    }
 
     @media #{$desktop} {
       background: none;
@@ -183,22 +195,13 @@
       nav {
         position: relative;
         z-index: 2;
-      }
-      h3 {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: $gray;
-        text-align: center;
-        font-size: 30px;
-        line-height: 50px;
-        text-transform: uppercase;
-        span {
-          color: $peach;
+        .sub{
+          &.active{
+            background: $blue;
+          }
         }
       }
+
       h3 {
         position: relative;
         margin: 20px 0;
