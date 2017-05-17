@@ -32,9 +32,13 @@ export default {
     this.eb.$on('route-change', this.pauseVideo);
   },
   mounted () {
-    youtube.loadApi.then(() => {
-      this.loadVideo(this.id)
-    });
+    youtube.loadApi
+      .then(() => {
+        this.loadVideo(this.id)
+      })
+      .catch((e) => {
+        console.log('youtube load error: ', e)
+      });
   },
   destroyed () {
     this.eb.$off('route-change', this.pauseVideo);
