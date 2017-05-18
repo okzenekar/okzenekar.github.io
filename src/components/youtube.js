@@ -1,23 +1,36 @@
 var loaded = false;
 
-var loadApi = new Promise (function (resolve) {
-  if (!loaded){
-    var tag = document.createElement('script'),
-      firstScriptTag = document.getElementsByTagName('script')[0];
+var loadApi = function () {
+  return new Promise (function (resolve) {
+    console.log('in promise', loaded)
+    if (!loaded){
+      var loop = setInterval(() => {
+        if (window.YT){
+          clearInterval(loop);
+          setTimeout(() => {
+            loaded = true;
+            resolve(window.YT);
+          },100);
+        }
+      },100);
 
-    tag.src = "https://www.youtube.com/iframe_api";
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
+      /*window.onYouTubeIframeAPIReady = function() {
+        console.log('onYouTubeIframeAPIReady');
 
-  window.onYouTubeIframeAPIReady = function() {
-    loaded = true;
-    resolve(window.YT);
-  };
+      };*/
 
-  if (loaded){
-    resolve(window.YT)
-  }
-})
+      var tag = document.createElement('script'),
+        firstScriptTag = document.getElementsByTagName('script')[0];
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    if (loaded){
+      resolve(window.YT)
+    }
+  });
+};
 
 var initVideo = function(id, initedVideos) {
   var container = document.querySelector('[video-id="' + id + '"] .insertPoint');

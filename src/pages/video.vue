@@ -2,7 +2,7 @@
   <div class="inner video">
     <div class="row">
       <div class="small-6 medium-4 large-4 columns" v-for="video in youtubeList">
-        <a  :data-video-id="video" 
+        <a  :data-video-id="video"
             :href="'https://youtu.be/' + video" target="_blank"
             @click="openModal">
           <img alt="" :src="'http://img.youtube.com/vi/' + video + '/mqdefault.jpg'">
@@ -43,7 +43,7 @@ export default {
       e.preventDefault();
       this.currentVideo = e.target.nodeName === 'A' ? e.target.getAttribute('data-video-id') : e.target.parentElement.getAttribute('data-video-id');
 
-      youtube.loadApi.then(() => {
+      youtube.loadApi().then(() => {
         youtube.initVideo(this.currentVideo, this.initedVideos);
       });
 

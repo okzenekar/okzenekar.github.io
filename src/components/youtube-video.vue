@@ -32,7 +32,7 @@ export default {
     this.eb.$on('route-change', this.pauseVideo);
   },
   mounted () {
-    youtube.loadApi
+    youtube.loadApi()
       .then(() => {
         this.loadVideo(this.id)
       })
