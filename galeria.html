@@ -19,6 +19,73 @@
   </style>
   
   <style type="text/css">
+    .index p {
+      margin-bottom: 10px
+    }
+
+    .index p:last-child {
+      margin-bottom: 0
+    }
+
+    @media (max-width:767px) {
+      .index p:last-child {
+        margin-bottom: 10px
+      }
+    }
+
+    .index ul {
+      margin-top: -10px;
+      margin-bottom: 10px
+    }
+
+    .index ul li {
+      position: relative;
+      padding-left: 15px
+    }
+
+    .index ul li:before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: "\25CF";
+      line-height: 1
+    }
+    /*# sourceURL=/./src/pages/index.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsU0FDRSxrQkFBb0IsQ0FDckIsQUFDRCxvQkFDRSxlQUFpQixDQUNsQixBQUNELHlCQUNBLG9CQUNJLGtCQUFvQixDQUN2QixDQUNBLEFBQ0QsVUFDRSxpQkFBa0IsQUFDbEIsa0JBQW9CLENBQ3JCLEFBQ0QsYUFDRSxrQkFBbUIsQUFDbkIsaUJBQW1CLENBQ3BCLEFBQ0Qsb0JBQ0Usa0JBQW1CLEFBQ25CLE9BQVEsQUFDUixRQUFTLEFBQ1QsZ0JBQWEsQUFDYixhQUFlLENBQ2hCIiwiZmlsZSI6ImluZGV4LnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIlxuQGNoYXJzZXQgXCJVVEYtOFwiO1xuLmluZGV4IHAge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuLmluZGV4IHA6bGFzdC1jaGlsZCB7XG4gIG1hcmdpbi1ib3R0b206IDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbi5pbmRleCBwOmxhc3QtY2hpbGQge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4uaW5kZXggdWwge1xuICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5pbmRleCB1bCBsaSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAxNXB4O1xufVxuLmluZGV4IHVsIGxpOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiA0cHg7XG4gIGNvbnRlbnQ6ICfil48nO1xuICBsaW5lLWhlaWdodDogMTtcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+  </style>
+  <style type="text/css">
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 5s
+    }
+
+    .fade-enter,
+    .fade-leave-to {
+      opacity: 0
+    }
+
+    .img-cycle {
+      position: relative;
+      padding-top: 66.28571%
+    }
+
+    .img-cycle img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto
+    }
+    /*# sourceURL=/./src/components/img-cycle.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9jb21wb25lbnRzL2ltZy1jeWNsZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esc0NBQ0UscUJBQXVCLENBQ3hCLEFBQ0QsMkJBQ0UsU0FBVyxDQUNaLEFBQ0QsV0FDRSxrQkFBbUIsQUFDbkIscUJBQXVCLENBQ3hCLEFBQ0QsZUFDRSxrQkFBbUIsQUFDbkIsTUFBTyxBQUNQLE9BQVEsQUFDUixXQUFZLEFBQ1osV0FBYSxDQUNkIiwiZmlsZSI6ImltZy1jeWNsZS52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5mYWRlLWVudGVyLWFjdGl2ZSwgLmZhZGUtbGVhdmUtYWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSA1cztcbn1cbi5mYWRlLWVudGVyLCAuZmFkZS1sZWF2ZS10byB7XG4gIG9wYWNpdHk6IDA7XG59XG4uaW1nLWN5Y2xlIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNjYuMjg1NzElO1xufVxuLmltZy1jeWNsZSBpbWcge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+  </style>
+  <style type="text/css">
+    .pageNavigation {
+      display: none
+    }
+  </style>
+  
+  <style type="text/css">
     .gallery h2 {
       margin: 0 10px 20px
     }
@@ -223,7 +290,7 @@
       <nav><a href="/" class="">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
         <div class="sub"><span class="categoryTitle">Szolgáltatások</span>
           <div class="categoryLinks"><a href="/zenekar-eskuvore" class="">Zenekar esküvőre</a><a href="/party-zenekar" class="">Party Zenekar</a><a href="/rendezveny-zenekar" class="">Rendezvény Zenekar</a></div>
-        </div><a href="/galeria" class="router-link-active">Galéria</a><a href="/video" class="">Videó</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="">Vélemények</a><a href="/kapcsolat" class="">Kapcsolat</a></nav>
+        </div><a href="/galeria" class="router-link-exact-active router-link-active">Galéria</a><a href="/video" class="">Videó</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="">Vélemények</a><a href="/kapcsolat" class="">Kapcsolat</a></nav>
       <h3 class="main"><span>O</span>k<span>z</span>enekar</h3>
     </div>
     <div id="content">
@@ -231,58 +298,42 @@
         <h1 class="custom-title">Galéria</h1>
       </div>
       <div class="inner gallery">
-        <div class="frame">
-          <a data-index="0" href="/src/assets/img/gallery/gallery_00.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_00-thumb.jpg"></a>
-          <a data-index="1" href="/src/assets/img/gallery/gallery_01.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_01-thumb.jpg"></a>
-          <a data-index="2" href="/src/assets/img/gallery/gallery_02.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_02-thumb.jpg"></a>
-          <a data-index="3" href="/src/assets/img/gallery/gallery_03.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_03-thumb.jpg"></a>
-          <a data-index="4" href="/src/assets/img/gallery/gallery_04.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_04-thumb.jpg"></a>
-          <a data-index="5" href="/src/assets/img/gallery/gallery_05.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_05-thumb.jpg"></a>
-          <a data-index="6" href="/src/assets/img/gallery/gallery_06.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_06-thumb.jpg"></a>
-          <a data-index="7" href="/src/assets/img/gallery/gallery_07.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_07-thumb.jpg"></a>
-          <a data-index="8" href="/src/assets/img/gallery/gallery_08.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_08-thumb.jpg"></a>
-          <a data-index="9" href="/src/assets/img/gallery/gallery_09.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_09-thumb.jpg"></a>
-          <a data-index="10" href="/src/assets/img/gallery/gallery_11.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_11-thumb.jpg"></a>
-          <a data-index="11" href="/src/assets/img/gallery/gallery_13.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_13-thumb.jpg"></a>
-          <a data-index="12" href="/src/assets/img/gallery/gallery_14.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_14-thumb.jpg"></a>
-          <a data-index="13" href="/src/assets/img/gallery/gallery_16.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_16-thumb.jpg"></a>
-          <a data-index="14" href="/src/assets/img/gallery/gallery_17.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_17-thumb.jpg"></a>
-          <a data-index="15" href="/src/assets/img/gallery/gallery_18.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_18-thumb.jpg"></a>
-          <a data-index="16" href="/src/assets/img/gallery/gallery_19.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_19-thumb.jpg"></a>
-          <a data-index="17" href="/src/assets/img/gallery/gallery_21.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_21-thumb.jpg"></a>
-          <a data-index="18" href="/src/assets/img/gallery/gallery_22.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_22-thumb.jpg"></a>
-          <a data-index="19" href="/src/assets/img/gallery/gallery_24.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_24-thumb.jpg"></a>
-          <a data-index="20" href="/src/assets/img/gallery/gallery_25.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_25-thumb.jpg"></a>
-          <a data-index="21" href="/src/assets/img/gallery/gallery_26.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_26-thumb.jpg"></a>
-          <a data-index="22" href="/src/assets/img/gallery/gallery_27.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_27-thumb.jpg"></a>
-          <a data-index="23" href="/src/assets/img/gallery/gallery_28.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_28-thumb.jpg"></a>
-          <a data-index="24" href="/src/assets/img/gallery/gallery_29.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_29-thumb.jpg"></a>
-          <a data-index="25" href="/src/assets/img/gallery/gallery_30.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_30-thumb.jpg"></a>
-          <a data-index="26" href="/src/assets/img/gallery/gallery_36.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_36-thumb.jpg"></a>
-          <a data-index="27" href="/src/assets/img/gallery/gallery_37.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_37-thumb.jpg"></a>
-          <a data-index="28" href="/src/assets/img/gallery/gallery_39.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_39-thumb.jpg"></a>
-          <a data-index="29" href="/src/assets/img/gallery/gallery_40.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_40-thumb.jpg"></a>
-          <a data-index="30" href="/src/assets/img/gallery/gallery_41.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_41-thumb.jpg"></a>
-          <a data-index="31" href="/src/assets/img/gallery/gallery_42.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_42-thumb.jpg"></a>
-          <a data-index="32" href="/src/assets/img/gallery/gallery_43.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_43-thumb.jpg"></a>
-          <a data-index="33" href="/src/assets/img/gallery/gallery_44.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_44-thumb.jpg"></a>
-          <a data-index="34" href="/src/assets/img/gallery/gallery_46.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_46-thumb.jpg"></a>
-          <a data-index="35" href="/src/assets/img/gallery/gallery_47.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_47-thumb.jpg"></a>
-          <a data-index="36" href="/src/assets/img/gallery/gallery_48.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_48-thumb.jpg"></a>
-          <a data-index="37" href="/src/assets/img/gallery/gallery_49.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_49-thumb.jpg"></a>
-          <a data-index="38" href="/src/assets/img/gallery/gallery_50.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_50-thumb.jpg"></a>
-          <a data-index="39" href="/src/assets/img/gallery/gallery_51.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_51-thumb.jpg"></a>
-          <a data-index="40" href="/src/assets/img/gallery/gallery_52.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_52-thumb.jpg"></a>
-          <a data-index="41" href="/src/assets/img/gallery/gallery_53.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_53-thumb.jpg"></a>
-          <a data-index="42" href="/src/assets/img/gallery/gallery_54.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_54-thumb.jpg"></a>
-          <a data-index="43" href="/src/assets/img/gallery/gallery_55.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_55-thumb.jpg"></a>
-          <a data-index="44" href="/src/assets/img/gallery/gallery_56.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_56-thumb.jpg"></a>
-          <a data-index="45" href="/src/assets/img/gallery/gallery_57.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_57-thumb.jpg"></a>
-          <a data-index="46" href="/src/assets/img/gallery/gallery_58.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_58-thumb.jpg"></a>
-          <a data-index="47" href="/src/assets/img/gallery/gallery_59.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_59-thumb.jpg"></a>
-          <a data-index="48" href="/src/assets/img/gallery/gallery_60.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_60-thumb.jpg"></a>
-          <a data-index="49" href="/src/assets/img/gallery/gallery_61.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_61-thumb.jpg"></a>
-        </div>
+        <div class="frame"><a data-index="0" href="/src/assets/img/gallery/gallery_00.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_00-thumb.jpg"></a><a data-index="1" href="/src/assets/img/gallery/gallery_01.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_01-thumb.jpg"></a>
+          <a
+            data-index="2" href="/src/assets/img/gallery/gallery_02.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_02-thumb.jpg"></a><a data-index="3" href="/src/assets/img/gallery/gallery_03.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_03-thumb.jpg"></a><a data-index="4" href="/src/assets/img/gallery/gallery_04.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_04-thumb.jpg"></a>
+            <a
+              data-index="5" href="/src/assets/img/gallery/gallery_05.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_05-thumb.jpg"></a><a data-index="6" href="/src/assets/img/gallery/gallery_06.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_06-thumb.jpg"></a><a data-index="7" href="/src/assets/img/gallery/gallery_07.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_07-thumb.jpg"></a>
+              <a
+                data-index="8" href="/src/assets/img/gallery/gallery_08.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_08-thumb.jpg"></a><a data-index="9" href="/src/assets/img/gallery/gallery_09.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_09-thumb.jpg"></a><a data-index="10" href="/src/assets/img/gallery/gallery_11.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_11-thumb.jpg"></a>
+                <a
+                  data-index="11" href="/src/assets/img/gallery/gallery_13.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_13-thumb.jpg"></a><a data-index="12" href="/src/assets/img/gallery/gallery_14.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_14-thumb.jpg"></a><a data-index="13" href="/src/assets/img/gallery/gallery_16.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_16-thumb.jpg"></a>
+                  <a
+                    data-index="14" href="/src/assets/img/gallery/gallery_17.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_17-thumb.jpg"></a><a data-index="15" href="/src/assets/img/gallery/gallery_18.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_18-thumb.jpg"></a><a data-index="16" href="/src/assets/img/gallery/gallery_19.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_19-thumb.jpg"></a>
+                    <a
+                      data-index="17" href="/src/assets/img/gallery/gallery_21.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_21-thumb.jpg"></a><a data-index="18" href="/src/assets/img/gallery/gallery_22.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_22-thumb.jpg"></a><a data-index="19" href="/src/assets/img/gallery/gallery_24.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_24-thumb.jpg"></a>
+                      <a
+                        data-index="20" href="/src/assets/img/gallery/gallery_25.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_25-thumb.jpg"></a><a data-index="21" href="/src/assets/img/gallery/gallery_26.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_26-thumb.jpg"></a><a data-index="22"
+                          href="/src/assets/img/gallery/gallery_27.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_27-thumb.jpg"></a><a data-index="23" href="/src/assets/img/gallery/gallery_28.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_28-thumb.jpg"></a>
+                        <a
+                          data-index="24" href="/src/assets/img/gallery/gallery_29.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_29-thumb.jpg"></a><a data-index="25" href="/src/assets/img/gallery/gallery_30.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_30-thumb.jpg"></a><a data-index="26"
+                            href="/src/assets/img/gallery/gallery_36.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_36-thumb.jpg"></a><a data-index="27" href="/src/assets/img/gallery/gallery_37.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_37-thumb.jpg"></a>
+                          <a
+                            data-index="28" href="/src/assets/img/gallery/gallery_39.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_39-thumb.jpg"></a><a data-index="29" href="/src/assets/img/gallery/gallery_40.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_40-thumb.jpg"></a><a data-index="30"
+                              href="/src/assets/img/gallery/gallery_41.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_41-thumb.jpg"></a><a data-index="31" href="/src/assets/img/gallery/gallery_42.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_42-thumb.jpg"></a>
+                            <a
+                              data-index="32" href="/src/assets/img/gallery/gallery_43.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_43-thumb.jpg"></a><a data-index="33" href="/src/assets/img/gallery/gallery_44.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_44-thumb.jpg"></a><a data-index="34"
+                                href="/src/assets/img/gallery/gallery_46.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_46-thumb.jpg"></a><a data-index="35" href="/src/assets/img/gallery/gallery_47.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_47-thumb.jpg"></a>
+                              <a
+                                data-index="36" href="/src/assets/img/gallery/gallery_48.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_48-thumb.jpg"></a><a data-index="37" href="/src/assets/img/gallery/gallery_49.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_49-thumb.jpg"></a><a data-index="38"
+                                  href="/src/assets/img/gallery/gallery_50.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_50-thumb.jpg"></a><a data-index="39" href="/src/assets/img/gallery/gallery_51.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_51-thumb.jpg"></a>
+                                <a
+                                  data-index="40" href="/src/assets/img/gallery/gallery_52.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_52-thumb.jpg"></a><a data-index="41" href="/src/assets/img/gallery/gallery_53.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_53-thumb.jpg"></a><a data-index="42"
+                                    href="/src/assets/img/gallery/gallery_54.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_54-thumb.jpg"></a><a data-index="43" href="/src/assets/img/gallery/gallery_55.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_55-thumb.jpg"></a>
+                                  <a
+                                    data-index="44" href="/src/assets/img/gallery/gallery_56.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_56-thumb.jpg"></a><a data-index="45" href="/src/assets/img/gallery/gallery_57.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_57-thumb.jpg"></a><a data-index="46"
+                                      href="/src/assets/img/gallery/gallery_58.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_58-thumb.jpg"></a><a data-index="47" href="/src/assets/img/gallery/gallery_59.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_59-thumb.jpg"></a>
+                                    <a
+                                      data-index="48" href="/src/assets/img/gallery/gallery_60.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_60-thumb.jpg"></a><a data-index="49" href="/src/assets/img/gallery/gallery_61.jpg"><img alt="" src="/src/assets/img/gallery/thumb/gallery_61-thumb.jpg"></a></div>
       </div>
     </div>
     <div id="contact">
@@ -426,11 +477,13 @@
   
   <script type="text/javascript" src="/manifest.js"></script>
   <script type="text/javascript" src="/vendor.js"></script>
-  <script type="text/javascript" charset="utf-8"  src="/pages/galeria.chunk.js"></script>
+  <script type="text/javascript" charset="utf-8"  src="/pages/index.chunk.js"></script>
+<script type="text/javascript" charset="utf-8"  src="/pages/galeria.chunk.js"></script>
 <script  src="https://www.google-analytics.com/analytics_debug.js"></script>
 <script  src="src/assets/js/lib/autotrack.js"></script>
 
   <script type="text/javascript" src="/main.js"></script>
+
 
 </body>
 

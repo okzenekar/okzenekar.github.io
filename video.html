@@ -19,6 +19,73 @@
   </style>
   
   <style type="text/css">
+    .index p {
+      margin-bottom: 10px
+    }
+
+    .index p:last-child {
+      margin-bottom: 0
+    }
+
+    @media (max-width:767px) {
+      .index p:last-child {
+        margin-bottom: 10px
+      }
+    }
+
+    .index ul {
+      margin-top: -10px;
+      margin-bottom: 10px
+    }
+
+    .index ul li {
+      position: relative;
+      padding-left: 15px
+    }
+
+    .index ul li:before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: "\25CF";
+      line-height: 1
+    }
+    /*# sourceURL=/./src/pages/index.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsU0FDRSxrQkFBb0IsQ0FDckIsQUFDRCxvQkFDRSxlQUFpQixDQUNsQixBQUNELHlCQUNBLG9CQUNJLGtCQUFvQixDQUN2QixDQUNBLEFBQ0QsVUFDRSxpQkFBa0IsQUFDbEIsa0JBQW9CLENBQ3JCLEFBQ0QsYUFDRSxrQkFBbUIsQUFDbkIsaUJBQW1CLENBQ3BCLEFBQ0Qsb0JBQ0Usa0JBQW1CLEFBQ25CLE9BQVEsQUFDUixRQUFTLEFBQ1QsZ0JBQWEsQUFDYixhQUFlLENBQ2hCIiwiZmlsZSI6ImluZGV4LnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIlxuQGNoYXJzZXQgXCJVVEYtOFwiO1xuLmluZGV4IHAge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuLmluZGV4IHA6bGFzdC1jaGlsZCB7XG4gIG1hcmdpbi1ib3R0b206IDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbi5pbmRleCBwOmxhc3QtY2hpbGQge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4uaW5kZXggdWwge1xuICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5pbmRleCB1bCBsaSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAxNXB4O1xufVxuLmluZGV4IHVsIGxpOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiA0cHg7XG4gIGNvbnRlbnQ6ICfil48nO1xuICBsaW5lLWhlaWdodDogMTtcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+  </style>
+  <style type="text/css">
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 5s
+    }
+
+    .fade-enter,
+    .fade-leave-to {
+      opacity: 0
+    }
+
+    .img-cycle {
+      position: relative;
+      padding-top: 66.28571%
+    }
+
+    .img-cycle img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto
+    }
+    /*# sourceURL=/./src/components/img-cycle.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9jb21wb25lbnRzL2ltZy1jeWNsZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esc0NBQ0UscUJBQXVCLENBQ3hCLEFBQ0QsMkJBQ0UsU0FBVyxDQUNaLEFBQ0QsV0FDRSxrQkFBbUIsQUFDbkIscUJBQXVCLENBQ3hCLEFBQ0QsZUFDRSxrQkFBbUIsQUFDbkIsTUFBTyxBQUNQLE9BQVEsQUFDUixXQUFZLEFBQ1osV0FBYSxDQUNkIiwiZmlsZSI6ImltZy1jeWNsZS52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5mYWRlLWVudGVyLWFjdGl2ZSwgLmZhZGUtbGVhdmUtYWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSA1cztcbn1cbi5mYWRlLWVudGVyLCAuZmFkZS1sZWF2ZS10byB7XG4gIG9wYWNpdHk6IDA7XG59XG4uaW1nLWN5Y2xlIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNjYuMjg1NzElO1xufVxuLmltZy1jeWNsZSBpbWcge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+  </style>
+  <style type="text/css">
+    .pageNavigation {
+      display: none
+    }
+  </style>
+  
+  <style type="text/css">
     .video .row {
       margin-bottom: -15px
     }
@@ -195,7 +262,7 @@
       <nav><a href="/" class="">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
         <div class="sub"><span class="categoryTitle">Szolgáltatások</span>
           <div class="categoryLinks"><a href="/zenekar-eskuvore" class="">Zenekar esküvőre</a><a href="/party-zenekar" class="">Party Zenekar</a><a href="/rendezveny-zenekar" class="">Rendezvény Zenekar</a></div>
-        </div><a href="/galeria" class="">Galéria</a><a href="/video" class="router-link-active">Videó</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="">Vélemények</a><a href="/kapcsolat" class="">Kapcsolat</a></nav>
+        </div><a href="/galeria" class="">Galéria</a><a href="/video" class="router-link-exact-active router-link-active">Videó</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="">Vélemények</a><a href="/kapcsolat" class="">Kapcsolat</a></nav>
       <h3 class="main"><span>O</span>k<span>z</span>enekar</h3>
     </div>
     <div id="content">
@@ -204,39 +271,17 @@
       </div>
       <div class="inner video">
         <div class="row">
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="NICuQWTwGzY" href="https://youtu.be/NICuQWTwGzY" target="_blank"><img alt="" src="http://img.youtube.com/vi/NICuQWTwGzY/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="wvv5pSmR9js" href="https://youtu.be/wvv5pSmR9js" target="_blank"><img alt="" src="http://img.youtube.com/vi/wvv5pSmR9js/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="5lpjGYn1ZiQ" href="https://youtu.be/5lpjGYn1ZiQ" target="_blank"><img alt="" src="http://img.youtube.com/vi/5lpjGYn1ZiQ/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="X0IqiCkKgZU" href="https://youtu.be/X0IqiCkKgZU" target="_blank"><img alt="" src="http://img.youtube.com/vi/X0IqiCkKgZU/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="4trrt0mNYII" href="https://youtu.be/4trrt0mNYII" target="_blank"><img alt="" src="http://img.youtube.com/vi/4trrt0mNYII/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="6BNHjraWWaU" href="https://youtu.be/6BNHjraWWaU" target="_blank"><img alt="" src="http://img.youtube.com/vi/6BNHjraWWaU/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="IXwr8llcvbI" href="https://youtu.be/IXwr8llcvbI" target="_blank"><img alt="" src="http://img.youtube.com/vi/IXwr8llcvbI/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="K79YLgI5nEU" href="https://youtu.be/K79YLgI5nEU" target="_blank"><img alt="" src="http://img.youtube.com/vi/K79YLgI5nEU/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="GgGKv9fnKAE" href="https://youtu.be/GgGKv9fnKAE" target="_blank"><img alt="" src="http://img.youtube.com/vi/GgGKv9fnKAE/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="Q-_EuyJhQas" href="https://youtu.be/Q-_EuyJhQas" target="_blank"><img alt="" src="http://img.youtube.com/vi/Q-_EuyJhQas/mqdefault.jpg"></a>
-          </div>
-          <div class="small-6 medium-4 large-4 columns">
-            <a data-video-id="GA7fRb_MeaU" href="https://youtu.be/GA7fRb_MeaU" target="_blank"><img alt="" src="http://img.youtube.com/vi/GA7fRb_MeaU/mqdefault.jpg"></a>
-          </div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="NICuQWTwGzY" href="https://youtu.be/NICuQWTwGzY" target="_blank"><img alt="" src="http://img.youtube.com/vi/NICuQWTwGzY/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="wvv5pSmR9js" href="https://youtu.be/wvv5pSmR9js" target="_blank"><img alt="" src="http://img.youtube.com/vi/wvv5pSmR9js/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="5lpjGYn1ZiQ" href="https://youtu.be/5lpjGYn1ZiQ" target="_blank"><img alt="" src="http://img.youtube.com/vi/5lpjGYn1ZiQ/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="X0IqiCkKgZU" href="https://youtu.be/X0IqiCkKgZU" target="_blank"><img alt="" src="http://img.youtube.com/vi/X0IqiCkKgZU/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="4trrt0mNYII" href="https://youtu.be/4trrt0mNYII" target="_blank"><img alt="" src="http://img.youtube.com/vi/4trrt0mNYII/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="6BNHjraWWaU" href="https://youtu.be/6BNHjraWWaU" target="_blank"><img alt="" src="http://img.youtube.com/vi/6BNHjraWWaU/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="IXwr8llcvbI" href="https://youtu.be/IXwr8llcvbI" target="_blank"><img alt="" src="http://img.youtube.com/vi/IXwr8llcvbI/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="K79YLgI5nEU" href="https://youtu.be/K79YLgI5nEU" target="_blank"><img alt="" src="http://img.youtube.com/vi/K79YLgI5nEU/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="GgGKv9fnKAE" href="https://youtu.be/GgGKv9fnKAE" target="_blank"><img alt="" src="http://img.youtube.com/vi/GgGKv9fnKAE/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="Q-_EuyJhQas" href="https://youtu.be/Q-_EuyJhQas" target="_blank"><img alt="" src="http://img.youtube.com/vi/Q-_EuyJhQas/mqdefault.jpg"></a></div>
+          <div class="small-6 medium-4 large-4 columns"><a data-video-id="GA7fRb_MeaU" href="https://youtu.be/GA7fRb_MeaU" target="_blank"><img alt="" src="http://img.youtube.com/vi/GA7fRb_MeaU/mqdefault.jpg"></a></div>
         </div>
       </div>
     </div>
@@ -414,11 +459,13 @@
   
   <script type="text/javascript" src="/manifest.js"></script>
   <script type="text/javascript" src="/vendor.js"></script>
-  <script type="text/javascript" charset="utf-8"  src="/pages/velemenyek.chunk.js"></script>
+  <script type="text/javascript" charset="utf-8"  src="/pages/index.chunk.js"></script>
+<script type="text/javascript" charset="utf-8"  src="/pages/velemenyek.chunk.js"></script>
 <script  src="https://www.google-analytics.com/analytics_debug.js"></script>
 <script  src="src/assets/js/lib/autotrack.js"></script>
 
   <script type="text/javascript" src="/main.js"></script>
+
 
 </body>
 
