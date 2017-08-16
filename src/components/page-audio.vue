@@ -54,6 +54,7 @@
             <button 
               class="tab"
               :class="{active: tabIndex === i}"
+              :key="i"
               v-for="(category, i) in music.categoryNames"
               @click="changeTab(i)">
               {{category}}
@@ -62,6 +63,7 @@
           <div 
             class="tabContent" 
             :class="{active: tabIndex === i}"
+            :key="i"
             v-for="(category, key, i) in music.songArray">
             <a 
               :href="'/src/assets/mp3/' + song.mp3" 
@@ -70,6 +72,7 @@
               :data-category="key"
               :data-tab-index="i"
               :data-song-index="k"
+              :key="k"
               v-for="(song, k) in category"
               @click="playSong">
               {{song.name}}
@@ -138,8 +141,6 @@
           ? this.playList[this.playList.indexOf(activeSong) - 1] 
           : this.playList[this.playList.length -1];
 
-        this.activeTabIndex = this.tabIndex = nextSong.tabIndex;
-        this.activeSongIndex = nextSong.songIndex;
         this.playSong(nextSong);
       },
       next () {
@@ -148,8 +149,6 @@
           ? this.playList[this.playList.indexOf(activeSong) + 1] 
           : this.playList[0];
             
-        this.activeTabIndex = this.tabIndex = nextSong.tabIndex;
-        this.activeSongIndex = nextSong.songIndex;
         this.playSong(nextSong);
       },
       formatTime (time) {
@@ -210,13 +209,19 @@
         this.activeSongIndex = typeof e.songIndex === 'number' ? e.songIndex : e.target.getAttribute('data-song-index') * 1;
         this.duration = null;
 
-        song = !e.target ? e : this.playList.filter(x => x.tabIndex === this.activeTabIndex && x.songIndex === this.activeSongIndex)[0];
+        song = !e.target ? e : this.playList.filter(
+          x => x.tabIndex === Number(e.target.getAttribute('data-tab-index')) && 
+          x.songIndex ===  Number(e.target.getAttribute('data-song-index'))
+        )[0];
         //console.log('song', song);
 
         this.createSong(song);
 
         this.activeSong.play();
         this.activeSong.setVolume(this.volume);
+        
+        this.activeTabIndex = this.tabIndex = song.tabIndex;
+        this.activeSongIndex = song.songIndex;
 
         //console.log('this.activeSong', this.activeSong);
       },
