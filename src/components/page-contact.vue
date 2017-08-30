@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="columns small-12 medium-4 desktop-4">
-          <a class="email" href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com">okzenekar@gmail.com</a> <a class="facebook" href="http://hu-hu.facebook.com/pages/OK-Zenekar/267446909949427" target="_blank" title="okzenekar">kövess minket Facebookon</a> <a class="youtube" href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" title="okzenekar">Youtube csatornánk</a>
+          <a class="email" href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com">okzenekar@gmail.com</a> <a class="facebook" href="https://www.facebook.com/people/Ferenc-Oberritter/100009251974053" target="_blank" title="okzenekar">kövess minket Facebookon</a> <a class="youtube" href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" title="okzenekar">Youtube csatornánk</a>
         </div>
       </div>
     </div>
