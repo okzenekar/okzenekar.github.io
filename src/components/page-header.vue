@@ -184,8 +184,10 @@
       font-size: 30px;
       line-height: 50px;
       text-transform: uppercase;
-      span {
-        color: $peach;
+      @media #{$desktop} {
+        span {
+          color: $red;
+        }
       }
     }
 

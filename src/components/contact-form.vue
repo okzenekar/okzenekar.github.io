@@ -171,6 +171,7 @@
   }
 </script>
 <style lang="scss">
+  @import './scss/_variables';
   .contact-form{
     .row{
       [class*=column]{
@@ -195,14 +196,14 @@
       line-height: 20px;
       padding: 5px 10px;
       &:focus{
-        border: 1px solid #00A0B0;
+        border: 1px solid $blue;
       }
     }
     textarea{
       min-height: 200px;
     }
     button{
-      background: #00A0B0;
+      background: $blue;
       color: #fff;
       font-size: 16px;
       line-height: 20px;

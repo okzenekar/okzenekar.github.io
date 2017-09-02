@@ -52,7 +52,7 @@
 
   .fullWidth{
     display: block;
-    background: #00A0B0;
+    background: $blue;
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
@@ -68,7 +68,7 @@
       line-height: 20px;
     }
     &:hover{
-      background: darken(#00A0B0, 10%)
+      background: darken($blue, 10%)
     }
   }
 

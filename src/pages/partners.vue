@@ -7,7 +7,7 @@
         </div>
         <div class="eq1">
           <div>
-            honlap: <a class="white_text" href="http://www.toplakzoltan.hu/" target="_blank">www.toplakzoltan.hu</a>
+            honlap: <a class="white_text" href="http://www.toplakzoltan.hu/" target="_blank" rel="noopener">www.toplakzoltan.hu</a>
           </div>
           <div>
             telefon:&nbsp; <span class="white_text">06-30/5979-012,</span> <span class="white_text">06-70/2823-168</span>
@@ -21,7 +21,7 @@
       </div>
       <div class="eq1">
         <div>
-          honlap: <a class="white_text" href="http://fotosember.wix.com/agostonrobert" target="_blank">fotosember.wix.com/agostonrobert</a>
+          honlap: <a class="white_text" href="http://fotosember.wix.com/agostonrobert" target="_blank" rel="noopener">fotosember.wix.com/agostonrobert</a>
         </div>
         <div>
           telefon: <span class="white_text">06-30/942-5745</span>
@@ -34,7 +34,7 @@
       </div>
       <div class="eq1">
         <div>
-          honlap: <a class="white_text" href="http://www.szikurafoto.com" target="_blank">www.szikurafoto.com</a>
+          honlap: <a class="white_text" href="http://www.szikurafoto.com" target="_blank" rel="noopener">www.szikurafoto.com</a>
         </div>
         <div>
           telefon: <span class="white_text">06-70/340-8525</span>
@@ -47,7 +47,7 @@
       </div>
       <div class="eq1">
         <div>
-          honlap: <a class="white_text" href="http://www.vofelymegoldas.hu" target="_blank">www.vofelymegoldas.hu</a>, <a class="white_text" href="http://www.facebook.com/vofelymegoldas.hu" target="_blank">www.facebook.com/vofelymegoldas.hu</a>
+          honlap: <a class="white_text" href="http://www.vofelymegoldas.hu" target="_blank" rel="noopener">www.vofelymegoldas.hu</a>, <a class="white_text" href="http://www.facebook.com/vofelymegoldas.hu" target="_blank" rel="noopener">www.facebook.com/vofelymegoldas.hu</a>
         </div>
         <div>
           telefon: <span class="white_text">06-20/204-3370</span>
@@ -60,7 +60,7 @@
       </div>
       <div class="eq1">
         <div>
-          honlap: <a class="white_text" href="http://www.nagyvofely.hu" target="_blank">www.nagyvofely.hu</a>
+          honlap: <a class="white_text" href="http://www.nagyvofely.hu" target="_blank" rel="noopener">www.nagyvofely.hu</a>
         </div>
         <div>
           telefon: <span class="white_text">06-20/9438-308</span>
@@ -73,7 +73,7 @@
       </div>
       <div class="eq1">
         <div>
-          honlap: <a class="white_text" href="http://www.janivofely.hu" target="_blank">www.janivofely.hu</a>
+          honlap: <a class="white_text" href="http://www.janivofely.hu" target="_blank" rel="noopener">www.janivofely.hu</a>
         </div>
         <div>
           telefon: <span class="white_text">06-70/335-2978</span>
@@ -85,7 +85,7 @@
         <strong>Esküvői fotó</strong>:
       </div>
       <div class="eq1">
-        <a class="white_text" href="http://eskuvoifoto.lapunk.hu" target="_blank">Esküvői fotózás, esküvői fotós</a>
+        <a class="white_text" href="http://eskuvoifoto.lapunk.hu" target="_blank" rel="noopener">Esküvői fotózás, esküvői fotós</a>
       </div>
     </div>
     <div class="row">
@@ -115,7 +115,7 @@
       <div class="eq1">
         <div>
           <div>
-            <a class="white_text" href="http://lakodalomba.hu" target="_blank" title="Szabad szolgáltatók adataiés más hasznos oldalak">http://lakodalomba.hu</a>
+            <a class="white_text" href="http://lakodalomba.hu" target="_blank" rel="noopener" title="Szabad szolgáltatók adataiés más hasznos oldalak">http://lakodalomba.hu</a>
           </div>
         </div>
       </div>

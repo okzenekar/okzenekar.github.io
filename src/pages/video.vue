@@ -3,7 +3,7 @@
     <div class="row">
       <div class="small-6 medium-4 large-4 columns" v-for="video in youtubeList">
         <a  :data-video-id="video"
-            :href="'https://youtu.be/' + video" target="_blank"
+            :href="'https://youtu.be/' + video" target="_blank" rel="noopener"
             @click="openModal">
           <img alt="" :src="'http://img.youtube.com/vi/' + video + '/mqdefault.jpg'">
         </a>

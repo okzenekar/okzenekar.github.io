@@ -19,9 +19,9 @@
             <span class="total">{{duration}}</span>
           </div>
           <div class="volume">
-            <span 
-              class="speaker" 
-              :class="{muted: muted}" 
+            <span
+              class="speaker"
+              :class="{muted: muted}"
               @click="speaker">
               <svg xml:space="preserve"
                   version="1"
@@ -37,7 +37,7 @@
                   <path id="path2"
                   d="M 55,21 C 59,26 61,32 61,38 C 61,45 59,51 55,56"
                   style="fill:none;stroke:#111111;stroke-width:5;stroke-linecap:round"/>
-                  <path id="path1"
+                  <path id="path3"
                   d="M 62,63 C 67,56 70,48 70,38 C 70,29 67,21 62,14"
                   style="fill:none;stroke:#111111;stroke-width:5;stroke-linecap:round"/>
                   </g>
@@ -51,7 +51,7 @@
         </div>
         <div class="tabContainer list">
           <div class="tabLinks" >
-            <button 
+            <button
               class="tab"
               :class="{active: tabIndex === i}"
               :key="i"
@@ -60,13 +60,13 @@
               {{category}}
             </button>
           </div>
-          <div 
-            class="tabContent" 
+          <div
+            class="tabContent"
             :class="{active: tabIndex === i}"
             :key="i"
             v-for="(category, key, i) in music.songArray">
-            <a 
-              :href="'/src/assets/mp3/' + song.mp3" 
+            <a
+              :href="'/src/assets/mp3/' + song.mp3"
               class="song"
               :class="{active: activeSongIndex === k && activeTabIndex === i}"
               :data-category="key"
@@ -101,7 +101,7 @@
         playing: false,
         duration: '00:00',
         volume: 70,
-        lastVolume: 70, 
+        lastVolume: 70,
         now: '00:00',
         updateVolume: null,
         updatePosition: null,
@@ -137,8 +137,8 @@
       },
       prev () {
         var activeSong = this.getActiveSong(),
-          nextSong = this.playList.indexOf(activeSong) 
-          ? this.playList[this.playList.indexOf(activeSong) - 1] 
+          nextSong = this.playList.indexOf(activeSong)
+          ? this.playList[this.playList.indexOf(activeSong) - 1]
           : this.playList[this.playList.length -1];
 
         this.playSong(nextSong);
@@ -146,9 +146,9 @@
       next () {
         var activeSong = this.getActiveSong(),
           nextSong = this.playList.indexOf(activeSong) < this.playList.length -1
-          ? this.playList[this.playList.indexOf(activeSong) + 1] 
+          ? this.playList[this.playList.indexOf(activeSong) + 1]
           : this.playList[0];
-            
+
         this.playSong(nextSong);
       },
       formatTime (time) {
@@ -196,7 +196,7 @@
       },
       playSong (e) {
         if (e.target) {
-          e.preventDefault();          
+          e.preventDefault();
         }
         console.log('playSong');
         var song;
@@ -210,7 +210,7 @@
         this.duration = null;
 
         song = !e.target ? e : this.playList.filter(
-          x => x.tabIndex === Number(e.target.getAttribute('data-tab-index')) && 
+          x => x.tabIndex === Number(e.target.getAttribute('data-tab-index')) &&
           x.songIndex ===  Number(e.target.getAttribute('data-song-index'))
         )[0];
         //console.log('song', song);
@@ -219,7 +219,7 @@
 
         this.activeSong.play();
         this.activeSong.setVolume(this.volume);
-        
+
         this.activeTabIndex = this.tabIndex = song.tabIndex;
         this.activeSongIndex = song.songIndex;
 
@@ -277,7 +277,7 @@
       this.updateVolume = this.setVolume();
       this.updatePosition = this.setPosition();
       soundManager.setup({
-        debugMode: process.env.NODE_ENV === 'production' ? false : true 
+        debugMode: process.env.NODE_ENV === 'production' ? false : true
       });
       //console.log('this.playList', this.playList);
     }

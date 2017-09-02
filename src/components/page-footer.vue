@@ -15,8 +15,8 @@
       </div>
       <div class="row text-center">
         <div class="columns small-12 medium-12 desktop-12">
-          <a class="facebook" href="http://hu-hu.facebook.com/pages/OK-Zenekar/267446909949427" target="_blank" title="okzenekar">kövess minket Facebookon</a> <span>/</span>
-          <a class="youtube" href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" title="okzenekar">Youtube csatornánk</a> <span>/</span>
+          <a class="facebook" href="http://hu-hu.facebook.com/pages/OK-Zenekar/267446909949427" target="_blank" rel="noopener" title="okzenekar">kövess minket Facebookon</a> <span>/</span>
+          <a class="youtube" href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" rel="noopener" title="okzenekar">Youtube csatornánk</a> <span>/</span>
           <a class="email" href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com">okzenekar@gmail.com</a>
         </div>
       </div>
