@@ -11,7 +11,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="google-site-verification" content="z5aDkPooXqXy9E_XFJs0xcatnf8uimT5IwhfmEmoIPU">
   <link href="src/assets/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="manifest" href="src/assets/manifest.json">
   <link href="/main.css" rel="stylesheet">
+  <style type="text/css">
+    .pageNavigation {
+      display: none
+    }
+  </style>
+  
+  <style type="text/css">
+    .index p {
+      margin-bottom: 10px
+    }
+
+    .index p:last-child {
+      margin-bottom: 0
+    }
+
+    @media (max-width:767px) {
+      .index p:last-child {
+        margin-bottom: 10px
+      }
+    }
+
+    .index ul {
+      margin-top: -10px;
+      margin-bottom: 10px
+    }
+
+    .index ul li {
+      position: relative;
+      padding-left: 15px
+    }
+
+    .index ul li:before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: "\25CF";
+      line-height: 1
+    }
+    /*# sourceURL=/./src/pages/index.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsU0FDRSxrQkFBb0IsQ0FDckIsQUFDRCxvQkFDRSxlQUFpQixDQUNsQixBQUNELHlCQUNBLG9CQUNJLGtCQUFvQixDQUN2QixDQUNBLEFBQ0QsVUFDRSxpQkFBa0IsQUFDbEIsa0JBQW9CLENBQ3JCLEFBQ0QsYUFDRSxrQkFBbUIsQUFDbkIsaUJBQW1CLENBQ3BCLEFBQ0Qsb0JBQ0Usa0JBQW1CLEFBQ25CLE9BQVEsQUFDUixRQUFTLEFBQ1QsZ0JBQWEsQUFDYixhQUFlLENBQ2hCIiwiZmlsZSI6ImluZGV4LnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIlxuQGNoYXJzZXQgXCJVVEYtOFwiO1xuLmluZGV4IHAge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuLmluZGV4IHA6bGFzdC1jaGlsZCB7XG4gIG1hcmdpbi1ib3R0b206IDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbi5pbmRleCBwOmxhc3QtY2hpbGQge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG59XG4uaW5kZXggdWwge1xuICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5pbmRleCB1bCBsaSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAxNXB4O1xufVxuLmluZGV4IHVsIGxpOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiA0cHg7XG4gIGNvbnRlbnQ6ICfil48nO1xuICBsaW5lLWhlaWdodDogMTtcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+  </style>
+  <style type="text/css">
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 5s
+    }
+
+    .fade-enter,
+    .fade-leave-to {
+      opacity: 0
+    }
+
+    .img-cycle {
+      position: relative;
+      padding-top: 66.28571%
+    }
+
+    .img-cycle img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto
+    }
+    /*# sourceURL=/./src/components/img-cycle.vue */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9jb21wb25lbnRzL2ltZy1jeWNsZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esc0NBQ0UscUJBQXVCLENBQ3hCLEFBQ0QsMkJBQ0UsU0FBVyxDQUNaLEFBQ0QsV0FDRSxrQkFBbUIsQUFDbkIscUJBQXVCLENBQ3hCLEFBQ0QsZUFDRSxrQkFBbUIsQUFDbkIsTUFBTyxBQUNQLE9BQVEsQUFDUixXQUFZLEFBQ1osV0FBYSxDQUNkIiwiZmlsZSI6ImltZy1jeWNsZS52dWUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5mYWRlLWVudGVyLWFjdGl2ZSwgLmZhZGUtbGVhdmUtYWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSA1cztcbn1cbi5mYWRlLWVudGVyLCAuZmFkZS1sZWF2ZS10byB7XG4gIG9wYWNpdHk6IDA7XG59XG4uaW1nLWN5Y2xlIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNjYuMjg1NzElO1xufVxuLmltZy1jeWNsZSBpbWcge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbn1cbiJdLCJzb3VyY2VSb290Ijoid2VicGFjazovLyJ9 */
+  </style>
   <style type="text/css">
     .pageNavigation {
       display: none
@@ -57,7 +125,7 @@
         width: 14.28%
       }
       .gallery a img:hover {
-        border-color: #00a0b0
+        border-color: #176aaa
       }
     }
 
@@ -92,7 +160,7 @@
       transform: rotate(45deg)
     }
     /*# sourceURL=/./src/pages/gallery.vue */
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9nYWxsZXJ5LnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxZQUNFLGtCQUFvQixDQUNyQixBQUNELGdCQUNFLGFBQWUsQ0FDaEIsQUFDRCxnQkFDRSxZQUFhLEFBQ2IsY0FBZSxBQUNmLGFBQWUsQ0FDaEIsQUFDRCxXQUNFLGtCQUFtQixBQUNuQixxQkFBc0IsQUFDdEIsWUFBYyxDQUNmLEFBQ0QsZUFDRSxjQUFlLEFBQ2YsV0FBWSxBQUNaLFlBQWEsQUFDYix3QkFBMEIsQ0FDM0IsQUFDRCx5QkFDQSxXQUNJLFNBQVcsQ0FDZCxDQUNBLEFBQ0QsMEJBQ0EsV0FDSSxZQUFjLENBQ2pCLEFBQ0QscUJBQ0ksb0JBQXNCLENBQ3pCLENBQ0EsQUFDRCx3REFFRSxrQkFBbUIsQUFDbkIsUUFBUyxBQUNULDJCQUE4QixBQUM5QixxQkFBc0IsQUFDdEIsZ0JBQWlCLEFBQ2pCLFVBQVcsQUFDWCxXQUFZLEFBQ1osV0FBYSxDQUNkLEFBQ0Qsa0VBQ0UsV0FBWSxBQUNaLDZCQUE4QixBQUM5Qiw4QkFBK0IsQUFJL0IsaUNBQWtDLEFBQ2xDLHdCQUEwQixDQUMzQixBQUNELGtFQUNFLGNBQWUsQUFDZixZQUFhLEFBQ2IsNkJBQThCLEFBQzlCLCtCQUFnQyxBQUloQyxnQ0FBaUMsQUFDakMsdUJBQXlCLENBQzFCIiwiZmlsZSI6ImdhbGxlcnkudnVlIiwic291cmNlc0NvbnRlbnQiOlsiXG4uZ2FsbGVyeSBoMiB7XG4gIG1hcmdpbjogMCAxMHB4IDIwcHg7XG59XG4uZ2FsbGVyeSAuaW5uZXIge1xuICBwYWRkaW5nOiAwIDVweDtcbn1cbi5nYWxsZXJ5IC5mcmFtZSB7XG4gIGZvbnQtc2l6ZTogMDtcbiAgbGluZS1oZWlnaHQ6IDA7XG4gIHBhZGRpbmc6IDAgNXB4O1xufVxuLmdhbGxlcnkgYSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB3aWR0aDogMzMuMzMlO1xufVxuLmdhbGxlcnkgYSBpbWcge1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgYm9yZGVyOiA1cHggc29saWQgI0Y5RjJFNztcbn1cbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkge1xuLmdhbGxlcnkgYSB7XG4gICAgd2lkdGg6IDIwJTtcbn1cbn1cbkBtZWRpYSAobWluLXdpZHRoOiAxMDI1cHgpIHtcbi5nYWxsZXJ5IGEge1xuICAgIHdpZHRoOiAxNC4yOCU7XG59XG4uZ2FsbGVyeSBhIGltZzpob3ZlciB7XG4gICAgYm9yZGVyLWNvbG9yOiAjMDBBMEIwO1xufVxufVxuZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAucHJldiwgZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAubmV4dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUwJTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoMCwgLTUwJSk7XG4gIHRleHQtaW5kZW50OiAtMTAwMDBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgei1pbmRleDogMjtcbiAgd2lkdGg6IDIwcHg7XG4gIGhlaWdodDogMjBweDtcbn1cbmRpdlttb2RhbC1pZD1cInBpY3R1cmVcIl0gLnByZXYucHJldiwgZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAubmV4dC5wcmV2IHtcbiAgbGVmdDogLTIwcHg7XG4gIGJvcmRlci10b3A6IDVweCBzb2xpZCAjRjlGMkU3O1xuICBib3JkZXItbGVmdDogNXB4IHNvbGlkICNGOUYyRTc7XG4gIC1tb3otdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbiAgLW8tdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbiAgLW1zLXRyYW5zZm9ybTogcm90YXRlKC00NWRlZyk7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbn1cbmRpdlttb2RhbC1pZD1cInBpY3R1cmVcIl0gLnByZXYubmV4dCwgZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAubmV4dC5uZXh0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHJpZ2h0OiAtMjBweDtcbiAgYm9yZGVyLXRvcDogNXB4IHNvbGlkICNGOUYyRTc7XG4gIGJvcmRlci1yaWdodDogNXB4IHNvbGlkICNGOUYyRTc7XG4gIC1tb3otdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xuICAtby10cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gIC1tcy10cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9nYWxsZXJ5LnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxZQUNFLGtCQUFvQixDQUNyQixBQUNELGdCQUNFLGFBQWUsQ0FDaEIsQUFDRCxnQkFDRSxZQUFhLEFBQ2IsY0FBZSxBQUNmLGFBQWUsQ0FDaEIsQUFDRCxXQUNFLGtCQUFtQixBQUNuQixxQkFBc0IsQUFDdEIsWUFBYyxDQUNmLEFBQ0QsZUFDRSxjQUFlLEFBQ2YsV0FBWSxBQUNaLFlBQWEsQUFDYix3QkFBMEIsQ0FDM0IsQUFDRCx5QkFDQSxXQUNJLFNBQVcsQ0FDZCxDQUNBLEFBQ0QsMEJBQ0EsV0FDSSxZQUFjLENBQ2pCLEFBQ0QscUJBQ0ksb0JBQXNCLENBQ3pCLENBQ0EsQUFDRCx3REFFRSxrQkFBbUIsQUFDbkIsUUFBUyxBQUNULDJCQUE4QixBQUM5QixxQkFBc0IsQUFDdEIsZ0JBQWlCLEFBQ2pCLFVBQVcsQUFDWCxXQUFZLEFBQ1osV0FBYSxDQUNkLEFBQ0Qsa0VBQ0UsV0FBWSxBQUNaLDZCQUE4QixBQUM5Qiw4QkFBK0IsQUFJL0IsaUNBQWtDLEFBQ2xDLHdCQUEwQixDQUMzQixBQUNELGtFQUNFLGNBQWUsQUFDZixZQUFhLEFBQ2IsNkJBQThCLEFBQzlCLCtCQUFnQyxBQUloQyxnQ0FBaUMsQUFDakMsdUJBQXlCLENBQzFCIiwiZmlsZSI6ImdhbGxlcnkudnVlIiwic291cmNlc0NvbnRlbnQiOlsiXG4uZ2FsbGVyeSBoMiB7XG4gIG1hcmdpbjogMCAxMHB4IDIwcHg7XG59XG4uZ2FsbGVyeSAuaW5uZXIge1xuICBwYWRkaW5nOiAwIDVweDtcbn1cbi5nYWxsZXJ5IC5mcmFtZSB7XG4gIGZvbnQtc2l6ZTogMDtcbiAgbGluZS1oZWlnaHQ6IDA7XG4gIHBhZGRpbmc6IDAgNXB4O1xufVxuLmdhbGxlcnkgYSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB3aWR0aDogMzMuMzMlO1xufVxuLmdhbGxlcnkgYSBpbWcge1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgYm9yZGVyOiA1cHggc29saWQgI0Y5RjJFNztcbn1cbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkge1xuLmdhbGxlcnkgYSB7XG4gICAgd2lkdGg6IDIwJTtcbn1cbn1cbkBtZWRpYSAobWluLXdpZHRoOiAxMDI1cHgpIHtcbi5nYWxsZXJ5IGEge1xuICAgIHdpZHRoOiAxNC4yOCU7XG59XG4uZ2FsbGVyeSBhIGltZzpob3ZlciB7XG4gICAgYm9yZGVyLWNvbG9yOiAjMTc2QUFBO1xufVxufVxuZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAucHJldiwgZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAubmV4dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUwJTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoMCwgLTUwJSk7XG4gIHRleHQtaW5kZW50OiAtMTAwMDBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgei1pbmRleDogMjtcbiAgd2lkdGg6IDIwcHg7XG4gIGhlaWdodDogMjBweDtcbn1cbmRpdlttb2RhbC1pZD1cInBpY3R1cmVcIl0gLnByZXYucHJldiwgZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAubmV4dC5wcmV2IHtcbiAgbGVmdDogLTIwcHg7XG4gIGJvcmRlci10b3A6IDVweCBzb2xpZCAjRjlGMkU3O1xuICBib3JkZXItbGVmdDogNXB4IHNvbGlkICNGOUYyRTc7XG4gIC1tb3otdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbiAgLW8tdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbiAgLW1zLXRyYW5zZm9ybTogcm90YXRlKC00NWRlZyk7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKTtcbn1cbmRpdlttb2RhbC1pZD1cInBpY3R1cmVcIl0gLnByZXYubmV4dCwgZGl2W21vZGFsLWlkPVwicGljdHVyZVwiXSAubmV4dC5uZXh0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHJpZ2h0OiAtMjBweDtcbiAgYm9yZGVyLXRvcDogNXB4IHNvbGlkICNGOUYyRTc7XG4gIGJvcmRlci1yaWdodDogNXB4IHNvbGlkICNGOUYyRTc7XG4gIC1tb3otdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xuICAtby10cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gIC1tcy10cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG4iXSwic291cmNlUm9vdCI6IndlYnBhY2s6Ly8ifQ== */
   </style>
   <style type="text/css">
     .modalLayer {
@@ -288,7 +356,7 @@
               <p>06-20/9860-214</p>
             </div>
           </div>
-          <div class="columns small-12 medium-4 desktop-4"><a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a> <a href="https://www.facebook.com/people/Ferenc-Oberritter/100009251974053" target="_blank" title="okzenekar" class="facebook">kövess minket Facebookon</a>            <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" title="okzenekar" class="youtube">Youtube csatornánk</a></div>
+          <div class="columns small-12 medium-4 desktop-4"><a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a> <a href="https://www.facebook.com/people/Ferenc-Oberritter/100009251974053" target="_blank" rel="noopener" title="okzenekar" class="facebook">kövess minket Facebookon</a>            <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" rel="noopener" title="okzenekar" class="youtube">Youtube csatornánk</a></div>
         </div>
       </div>
     </div>
@@ -301,7 +369,7 @@
                 <div class="pointer"></div>
                 <div class="current"></div>
               </div> <span class="now">00:00</span> <span class="decor">/</span> <span class="total">00:00</span></div>
-            <div class="volume"><span class="speaker"><svg xml:space="preserve" version="1" id="speaker" width="400pt" height="400pt" viewBox="0 0 75 75"><g id="g1"><polygon id="polygon1" points="39,14 22,29 6,29 6,48 22,48 39,63 39,14" style="stroke: #111111; stroke-width: 5px; stroke-linejoin: round; fill: #111111;"></polygon><path id="path1" d="M 48,49 C 50,46 51,42 51,38 C 51,34 50,31 48,28" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path> <path id="path2" d="M 55,21 C 59,26 61,32 61,38 C 61,45 59,51 55,56" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path> <path id="path1" d="M 62,63 C 67,56 70,48 70,38 C 70,29 67,21 62,14" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path></g></svg></span>
+            <div class="volume"><span class="speaker"><svg xml:space="preserve" version="1" id="speaker" width="400pt" height="400pt" viewBox="0 0 75 75"><g id="g1"><polygon id="polygon1" points="39,14 22,29 6,29 6,48 22,48 39,63 39,14" style="stroke: #111111; stroke-width: 5px; stroke-linejoin: round; fill: #111111;"></polygon><path id="path1" d="M 48,49 C 50,46 51,42 51,38 C 51,34 50,31 48,28" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path> <path id="path2" d="M 55,21 C 59,26 61,32 61,38 C 61,45 59,51 55,56" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path> <path id="path3" d="M 62,63 C 67,56 70,48 70,38 C 70,29 67,21 62,14" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path></g></svg></span>
               <div class="line">
                 <div class="pointer"></div>
                 <div class="current"></div>
@@ -395,8 +463,8 @@
           <div class="columns small-12 medium-12 desktop-12"><a href="/partnereink" class="fullWidth">Partnereink </a></div>
         </div>
         <div class="row text-center">
-          <div class="columns small-12 medium-12 desktop-12"><a href="http://hu-hu.facebook.com/pages/OK-Zenekar/267446909949427" target="_blank" title="okzenekar" class="facebook">kövess minket Facebookon</a> <span>/</span> <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" title="okzenekar"
-              class="youtube">Youtube csatornánk</a> <span>/</span> <a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a></div>
+          <div class="columns small-12 medium-12 desktop-12"><a href="http://hu-hu.facebook.com/pages/OK-Zenekar/267446909949427" target="_blank" rel="noopener" title="okzenekar" class="facebook">kövess minket Facebookon</a> <span>/</span> <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank"
+              rel="noopener" title="okzenekar" class="youtube">Youtube csatornánk</a> <span>/</span> <a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a></div>
         </div>
       </footer>
     </div>
@@ -410,11 +478,13 @@
   
   <script type="text/javascript" src="/manifest.js"></script>
   <script type="text/javascript" src="/vendor.js"></script>
-  <script type="text/javascript" charset="utf-8"  src="/pages/galeria.chunk.js"></script>
+  <script type="text/javascript" charset="utf-8"  src="/pages/index.chunk.js"></script>
+<script type="text/javascript" charset="utf-8"  src="/pages/galeria.chunk.js"></script>
 <script  src="https://www.google-analytics.com/analytics_debug.js"></script>
 <script  src="src/assets/js/lib/autotrack.js"></script>
 
   <script type="text/javascript" src="/main.js"></script>
+
 
 </body>
 
