@@ -1,3 +1,13 @@
+var supportsPassive = false;
+try {
+  var opts = Object.defineProperty({}, 'passive', {
+    get: function() {
+      supportsPassive = true;
+    }
+  });
+  window.addEventListener('test', null, opts);
+} catch (e) {}
+
 export default function progressBar (options) {
   var containerWidth = () => options.container.offsetWidth;
   var eventHandler = function (e) {
@@ -21,7 +31,7 @@ export default function progressBar (options) {
   };
 
   ['touchmove', 'mousemove', 'mouseup', 'click'].forEach(function (type) {
-    options.container.addEventListener(type, eventHandler, false);
+    options.container.addEventListener(type, eventHandler, supportsPassive ? { passive: true } : false);
   });
 
   return function (percent) {
