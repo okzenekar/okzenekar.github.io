@@ -4,8 +4,8 @@ var path = require('path');
 var beautifyHtml = require('js-beautify').html;
 
 var fileList = globby.sync([
-      'dist/**/*.html'
-    ]);
+  'dist/**/*.html'
+]);
 
 fileList.forEach(file => {
   var content = fs.readFileSync(file, 'utf8');
@@ -17,12 +17,13 @@ fileList.forEach(file => {
 
   while ((scripts = pattern.exec(content)) !== null){
     //console.log(scripts[0]);
-    result += scripts[0].replace('async=""', '') + '\n';
+    result += scripts[0] + '\n';
   }
 
   content = content
     .replace(pattern, '')
-    .replace('vendor.js"></script>', 'vendor.js"></script>\n  ' +  result);
+    .replace('main.js"></script>', 'main.js"></script>\n  ' +  result)
+    .replace(/async=""/g, 'async');
 
   fs.removeSync(outputFilePath.split('.html')[0]);
   fs.outputFileSync(outputFilePath, content);
