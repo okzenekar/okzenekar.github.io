@@ -3,7 +3,7 @@ var about = r => require.ensure([], () => r(require('./pages/about.vue')), 'rolu
 var articleParty = r => require.ensure([], () => r(require('./pages/article-party.vue')), 'party-zenekar');
 var articleEvent = r => require.ensure([], () => r(require('./pages/article-event.vue')), 'zenekar-rendezvenyre');
 var articleWedding = r => require.ensure([], () => r(require('./pages/article-wedding.vue')), 'zenekar-eskuvore');
-var downloads = r => require.ensure([], () => r(require('./pages/downloads.vue')), 'letoltesek');
+//var downloads = r => require.ensure([], () => r(require('./pages/downloads.vue')), 'letoltesek');
 var gallery = r => require.ensure([], () => r(require('./pages/gallery.vue')), 'galeria');
 var opinions = r => require.ensure([], () => r(require('./pages/opinions.vue')), 'video');
 var partners = r => require.ensure([], () => r(require('./pages/partners.vue')), 'partnereink');
@@ -98,7 +98,7 @@ var routes = [
       metaDesc: 'lépjen Kapcsolatba velünk'
     }
   },
-  {
+  /*{
     path: '/letoltesek',
     component: downloads,
     data: {
@@ -106,7 +106,7 @@ var routes = [
       linkName: 'Letöltések',
       metaDesc: 'Zenék letöltése'
     }
-  },
+  },*/
   {
     path: '/partnereink',
     component: partners,

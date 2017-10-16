@@ -1,7 +1,8 @@
 <template>
   <div class="inner video">
     <div class="row">
-      <div class="small-6 medium-4 large-4 columns" v-for="video in youtubeList">
+      <div class="small-6 medium-4 large-4 columns" 
+        v-for="(video, i) in youtubeList" :key="i">
         <a  :data-video-id="video"
             :href="'https://youtu.be/' + video" target="_blank" rel="noopener"
             @click="openModal">
@@ -27,12 +28,12 @@ export default {
       initedVideos: {},
       currentVideo: '',
       youtubeList:  [
-      'NICuQWTwGzY', 'wvv5pSmR9js', '5lpjGYn1ZiQ', 'X0IqiCkKgZU', '4trrt0mNYII', '6BNHjraWWaU', 'IXwr8llcvbI', 'K79YLgI5nEU', 'GgGKv9fnKAE', 'Q-_EuyJhQas', 'GA7fRb_MeaU'
+        'NICuQWTwGzY', 'wvv5pSmR9js', '5lpjGYn1ZiQ', 'X0IqiCkKgZU', '4trrt0mNYII', '6BNHjraWWaU', 'IXwr8llcvbI', 'K79YLgI5nEU', 'GgGKv9fnKAE'
       ]
     }
   },
   methods: {
-    afterClose (e) {
+    afterClose () {
       //console.log('custom callback after layer closed', e);
       Object.keys(this.initedVideos).forEach((video) =>{
         //console.log(this.initedVideos[video]);

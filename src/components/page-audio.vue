@@ -50,32 +50,17 @@
           </div>
         </div>
         <div class="tabContainer list">
-          <div class="tabLinks" >
-            <button
-              class="tab"
-              :class="{active: tabIndex === i}"
-              :key="i"
-              v-for="(category, i) in music.categoryNames"
-              @click="changeTab(i)">
-              {{category}}
-            </button>
-          </div>
           <div
-            class="tabContent"
-            :class="{active: tabIndex === i}"
-            :key="i"
-            v-for="(category, key, i) in music.songArray">
+            class="tabContent active">
             <a
               :href="'/src/assets/mp3/' + song.mp3"
               class="song"
-              :class="{active: activeSongIndex === k && activeTabIndex === i}"
-              :data-category="key"
-              :data-tab-index="i"
+              v-for="(song, k) in playList"
+              :class="{active: activeSongIndex === k}"
               :data-song-index="k"
               :key="k"
-              v-for="(song, k) in category"
               @click="playSong">
-              {{song.name}}
+              <span>&#9834;</span> {{song.name}}
             </a>
           </div>
         </div>
@@ -94,8 +79,6 @@
     data () {
       return {
         music: music,
-        tabIndex: 0,
-        activeTabIndex: 0,
         activeSongIndex: 4,
         activeSong: null,
         playing: false,
@@ -110,15 +93,9 @@
     },
     computed: {
       playList: function () {
-        return Object.keys(music.songArray).reduce(function (acc, val, i) {
-          return acc.concat(music.songArray[val].map((x, j) => ({
-            mp3: x.mp3,
-            name: x.name,
-            category: val,
-            tabIndex: i,
-            songIndex: j
-          })));
-        }, [])
+        return music.songArray.map((x, i) => Object.assign(x, {
+          songIndex: i
+        }));
       }
     },
     methods: {
@@ -127,27 +104,24 @@
         n = n + '';
         return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
       },
-      changeTab (index) {
-        this.tabIndex = index;
-      },
       getActiveSong () {
-        return this.playList.filter(x => {
-          return x.songIndex === this.activeSongIndex && x.tabIndex === this.activeTabIndex;
+        return this.playList.filter((x) => {
+          return x.songIndex === this.activeSongIndex;
         })[0]
       },
       prev () {
         var activeSong = this.getActiveSong(),
           nextSong = this.playList.indexOf(activeSong)
-          ? this.playList[this.playList.indexOf(activeSong) - 1]
-          : this.playList[this.playList.length -1];
+            ? this.playList[this.playList.indexOf(activeSong) - 1]
+            : this.playList[this.playList.length -1];
 
         this.playSong(nextSong);
       },
       next () {
         var activeSong = this.getActiveSong(),
           nextSong = this.playList.indexOf(activeSong) < this.playList.length -1
-          ? this.playList[this.playList.indexOf(activeSong) + 1]
-          : this.playList[0];
+            ? this.playList[this.playList.indexOf(activeSong) + 1]
+            : this.playList[0];
 
         this.playSong(nextSong);
       },
@@ -166,6 +140,7 @@
       },
       playPause () {
         var song = this.getActiveSong();
+        console.log('song', song);
         this.playing = !this.playing;
 
         if (this.activeSong){
@@ -210,8 +185,7 @@
         this.duration = null;
 
         song = !e.target ? e : this.playList.filter(
-          x => x.tabIndex === Number(e.target.getAttribute('data-tab-index')) &&
-          x.songIndex ===  Number(e.target.getAttribute('data-song-index'))
+          x => x.songIndex ===  Number(e.target.getAttribute('data-song-index'))
         )[0];
         //console.log('song', song);
 
@@ -220,7 +194,6 @@
         this.activeSong.play();
         this.activeSong.setVolume(this.volume);
 
-        this.activeTabIndex = this.tabIndex = song.tabIndex;
         this.activeSongIndex = song.songIndex;
 
         //console.log('this.activeSong', this.activeSong);
@@ -292,6 +265,7 @@
     .row {
       margin: 0 .9375rem;
       padding: .9375rem;
+      padding-bottom: 0;
       background: $white;
       border: 2px solid $blue;
     }
@@ -324,9 +298,11 @@
     padding: 10px;
     text-decoration: none;
     color: $blue;
-    border-bottom: 2px solid $blue;
-    &:last-child {
-      border-bottom: none;
+    border-top: 2px solid $blue;
+    span{
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 10px;
     }
     &.active, &:hover {
       color: $white;
