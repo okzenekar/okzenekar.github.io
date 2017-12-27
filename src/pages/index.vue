@@ -2,27 +2,30 @@
   <div class="inner index">
     <div class="row">
       <div class="small-12 medium-6 large-6 columns">
-        <p>Örökzöld, retro, mulatós élőben, és igény szerint napjaink zenéi DJ-szolgáltatással.</p>
-        <p>Minden a Ti kívánságotok szerint! Teljes mértékben ránk is bízhatjátok, de közösen is összeállíthatjuk az est zenei anyagát, hogy a nagyszülőktől a barátokig, mindenki a legjobban érezhesse magát.</p>
-        <p>Ajándék-szolgáltatásaink:</p>
-        <ul>
-          <li>a ceremóniamesteri tevékenység ellátása</li>
-          <li>a lakodalom helyszínen a esküvői szertartás kihangosítása</li>
-        </ul>
-        <p>Ha felkeltettük érdeklődéseteket, keressetek telefonon és <a href="mailto:okzenekar@gmail.com">emailen</a>.</p>
+        <img alt="" src="~root/assets/img/index_1.jpg" style="padding-top:6px;padding-right:38px;">
       </div>
       <div class="small-12 medium-6 large-6 columns">
-        <img-cycle 
-          :images="galleryImages" 
-          :index="0"
-          loop ></img-cycle>
+        <img alt="" src="~root/assets/img/index_0.png" style="width:100%;height:auto;margin-bottom:20px;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <p>Minden a Ti kívánságotok szerint! Teljes mértékben ránk is bízhatjátok, de közösen is összeállíthatjuk az est zenei anyagát, hogy a nagyszülőktől a barátokig, mindenki a legjobban érezhesse magát.</p>
+        <p>Lehetőségek:</p>
+        <ul>
+          <li>Egész estés élőhangszeres zeneszolgáltatás</li>
+          <li>Egész estés Dj szolgáltatás</li>
+          <li>Megosztva élőhangszeres-és Dj szolgáltatás</li>
+          <li>Ajándék-szolgáltatásunk: a ceremóniamesteri tevékenység ellátása,a lakodalom helyszínén</li>
+        </ul>
+        <p>Ha felkeltettük érdeklődéseteket, keressetek telefonon és <a href="mailto:okzenekar@gmail.com">emailen</a>.</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import imgCycle from 'root/components/img-cycle.vue';
+//import imgCycle from 'root/components/img-cycle.vue';
 export default {
   name: 'index',
   props: ['title'],
@@ -34,7 +37,7 @@ export default {
     }
   },
   components: {
-    imgCycle
+    //imgCycle
   }
 }
 </script>
