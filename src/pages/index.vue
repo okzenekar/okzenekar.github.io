@@ -2,10 +2,10 @@
   <div class="inner index">
     <div class="row">
       <div class="small-12 medium-6 large-6 columns">
-        <img alt="" src="~root/assets/img/index_1.jpg" style="padding-top:6px;padding-right:38px;">
+        <img alt="" src="~root/assets/img/index_1.png">
       </div>
       <div class="small-12 medium-6 large-6 columns">
-        <img alt="" src="~root/assets/img/index_0.png" style="width:100%;height:auto;margin-bottom:20px;">
+        <img alt="" src="~root/assets/img/index_0.png" style="margin-bottom:20px;">
       </div>
     </div>
     <div class="row">
@@ -31,8 +31,8 @@ export default {
   props: ['title'],
   data () {
     return  {
-      galleryImages: [ 
-        '52', '49', '00', '02', '37', '18', '39', '01' 
+      galleryImages: [
+        '52', '49', '00', '02', '37', '18', '39', '01'
       ].map(x => `/src/assets/img/cycle/gallery_${x}.jpg`)
     }
   },

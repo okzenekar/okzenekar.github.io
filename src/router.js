@@ -17,7 +17,7 @@ var routes = [
     component: index,
     data: {
       linkName: 'Főoldal',
-      metaDesc: 'Ok Zenekar lakodalom party bál eksüvő Zenei kínálat kompromisszum nélkül!'
+      metaDesc: 'Ok Zenekar lakodalom party bál eksüvő dj Zenei kínálat kompromisszum nélkül!'
     }
   },
   {
