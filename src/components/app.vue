@@ -4,6 +4,7 @@
     <page-header></page-header>
     <page-content :sub-title="subTitle"></page-content>
     <page-contact></page-contact>
+    <page-video></page-video>
     <page-audio></page-audio>
     <page-footer></page-footer>
   </div>
@@ -15,6 +16,7 @@ import pageHeader from 'root/components/page-header.vue';
 import pageContact from 'root/components/page-contact.vue';
 import pageContent from 'root/components/page-content.vue';
 import pageAudio from 'root/components/page-audio.vue';
+import pageVideo from 'root/components/page-video.vue';
 import pageFooter from 'root/components/page-footer.vue';
 import ga from 'root/components/ga';
 
@@ -39,7 +41,8 @@ export default {
     pageContact,
     pageContent,
     pageAudio,
-    pageFooter
+    pageFooter,
+    pageVideo
   }
 }
 </script>

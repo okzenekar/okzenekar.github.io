@@ -25,8 +25,8 @@ export default {
     loopImages () {
       //console.log('innerIndex', this.innerIndex);
       this.innerIndex = this.innerIndex < this.imagesLength - 1 
-      ? this.innerIndex + 1 
-      : 0;
+        ? this.innerIndex + 1 
+        : 0;
     }
   },
   watch: {
@@ -55,7 +55,8 @@ export default {
 }
 .img-cycle{
   position: relative;
-  padding-top: 232/350*100 + %;
+  padding-top: 468/962*100%;
+  margin-bottom: 10px;
   img {
     position: absolute;
     top: 0;

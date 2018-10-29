@@ -1,5 +1,4 @@
 var index = r => require.ensure([], () => r(require('./pages/index.vue')), 'index');
-var about = r => require.ensure([], () => r(require('./pages/about.vue')), 'rolunk');
 var articleParty = r => require.ensure([], () => r(require('./pages/article-party.vue')), 'party-zenekar');
 var articleEvent = r => require.ensure([], () => r(require('./pages/article-event.vue')), 'zenekar-rendezvenyre');
 var articleWedding = r => require.ensure([], () => r(require('./pages/article-wedding.vue')), 'zenekar-eskuvore');
@@ -18,14 +17,6 @@ var routes = [
     data: {
       linkName: 'Főoldal',
       metaDesc: 'Ok Zenekar lakodalom party bál eksüvő dj Zenei kínálat kompromisszum nélkül!'
-    }
-  },
-  {
-    path: '/rolunk',
-    component: about,
-    data: {
-      linkName: 'Rólunk',
-      metaDesc: 'Rólunk: Mi, a zenekar tagjai gyermekkorunk óta zenélünk, tízen éves korunk óta játszunk tánczenét. Mind ketten igazi hangszeres zenészek vagyunk. Hangszereink: szintetizátor, harmonika, szaxofon, klarinét. Hangszereink mellett énekhangunkkal is jól bánunk.'
     }
   },
   {

@@ -53,6 +53,12 @@ ul.list {
     }
   }
 }
+[data-url="/"]{
+  h2, .custom-title{
+    position: absolute;
+    top: -65px;
+  }
+}
 h2, .custom-title {
   background: $peach;
   color: $gray;

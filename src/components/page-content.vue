@@ -1,5 +1,5 @@
 <template>
-  <div id="content">
+  <div id="content" :data-url="$route.path">
     <div class="inner" v-show="articleCheck">
       <h1 class="custom-title">{{subTitle}}</h1>
     </div>
