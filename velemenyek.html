@@ -54,6 +54,7 @@
       padding-bottom: 15px;
       border-bottom: 1px solid #413e4a
     }
+
     /*# sourceURL=/./src/pages/opinions.vue */
     /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uL3NyYy9wYWdlcy9vcGluaW9ucy52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsbUJBQ0Usa0JBQW9CLENBQ3JCLEFBQ0QsOEJBQ0UsZUFBaUIsQ0FDbEIsQUFDRCxnQ0FDRSxrQkFBb0IsQ0FDckIsQUFDRCxhQUNFLGtCQUFvQixDQUNyQixBQUNELHNDQUNFLGNBQWUsQUFDZixZQUFhLEFBQ2IsaUJBQWtCLEFBQ2xCLGdCQUFrQixBQUNsQixvQkFBc0IsQ0FDdkIsQUFDRCxtQkFDRSxjQUFlLEFBQ2Ysa0JBQW9CLENBQ3JCLEFBQ0QsWUFDRSxvQkFBcUIsQUFDckIsK0JBQWlDLENBQ2xDIiwiZmlsZSI6Im9waW5pb25zLnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIlxuLm9waW5pb25zIC5jb2x1bW5zIHtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cbi5vcGluaW9ucyAuY29sdW1uczpsYXN0LWNoaWxkIHtcbiAgbWFyZ2luLWJvdHRvbTogMDtcbn1cbi5vcGluaW9ucyAuY29sdW1uczpsYXN0LWNoaWxkIHAge1xuICBib3JkZXItYm90dG9tOiBub25lO1xufVxuLm9waW5pb25zIGgzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5vcGluaW9ucyBoMyAuZGF0ZSwgLm9waW5pb25zIGgzIC51c2VyIHtcbiAgY29sb3I6ICM0MTNFNEE7XG4gIHBhZGRpbmc6IDVweDtcbiAgbGluZS1oZWlnaHQ6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4ub3BpbmlvbnMgaDMgLnVzZXIge1xuICBjb2xvcjogI0Y5RjJFNztcbiAgYmFja2dyb3VuZDogI0NDMzMzRjtcbn1cbi5vcGluaW9ucyBwIHtcbiAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjNDEzRTRBO1xufVxuIl0sInNvdXJjZVJvb3QiOiJ3ZWJwYWNrOi8vIn0= */
   </style>
@@ -63,114 +64,107 @@
   <div id="app">
     <div class="pageNavigation"></div>
     <div id="header"><button class="menu hide-for-large">menu</button>
-      <nav><a href="/" class="">Főoldal</a><a href="/rolunk" class="">Rólunk</a>
+      <nav><a href="/" class="">Főoldal</a>
         <div class="sub"><span class="categoryTitle">Szolgáltatások</span>
           <div class="categoryLinks"><a href="/zenekar-eskuvore" class="">Zenekar esküvőre</a><a href="/party-zenekar" class="">Party Zenekar</a><a href="/rendezveny-zenekar" class="">Rendezvény Zenekar</a></div>
-        </div><a href="/galeria" class="">Galéria</a><a href="/video" class="">Videó</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="router-link-exact-active router-link-active">Vélemények</a><a href="/kapcsolat" class="">Kapcsolat</a></nav>
+        </div><a href="/galeria" class="">Galéria</a><a href="/video" class="">Videó</a><a href="/repertoar" class="">Repertoár</a><a href="/velemenyek" class="router-link-exact-active router-link-active">Vélemények</a><a href="/kapcsolat" class="">Kapcsolat</a>
+      </nav>
       <h3 class="main"><span>O</span>k<span>z</span>enekar</h3>
     </div>
-    <div id="content">
+    <div id="content" data-url="/velemenyek">
       <div class="inner" style="">
         <h1 class="custom-title">Vélemények</h1>
       </div>
       <div class="inner opinions">
         <div class="columns">
           <h3><span class="user">Kriszti és Zoli</span></h3>
-          <p>A kedves Ok Zenekarnak!<br> Nagyon- nagyon köszönjük a fantasztikus estét,<br> a számunkra legszebb és legfontosabb napunkat felejthetetlenné tették!<br> Kriszti és Zoli</p>
+          <p>A kedves Ok Zenekarnak!<br>
+            Nagyon- nagyon köszönjük a fantasztikus estét,<br>
+            a számunkra legszebb és legfontosabb napunkat felejthetetlenné tették!<br>
+            Kriszti és Zoli</p>
         </div>
         <div class="columns">
           <h3><span class="user">Judit és Peti</span></h3>
-          <p>Kedves Ferenc és Gábor!<br> Nagyon szépen köszönjük még egyszer azt a felejthetetlen hangulatú estét, amiben a lakodalmunkon részünk volt! Nagyszerűek voltak a meglepetések, játékok is! Mindenki nagyon jól érezte magát, többen nagyon régen mulattak
-            ilyen jól utoljára! Nagyon jól igazodtatok a közönség igényeihez, mindenki megtalálta azt a zenei csokrot, amire jól tudott szórakozni!<br> További sikeres munkát kívánunk Nektek!</p>
+          <p>Kedves Ferenc és Gábor!<br>
+            Nagyon szépen köszönjük még egyszer azt a felejthetetlen hangulatú estét, amiben a lakodalmunkon részünk volt! Nagyszerűek voltak a meglepetések, játékok is! Mindenki nagyon jól érezte magát, többen nagyon régen mulattak ilyen jól utoljára! Nagyon jól igazodtatok a közönség igényeihez, mindenki megtalálta azt a zenei csokrot, amire jól tudott szórakozni!<br>
+            További sikeres munkát kívánunk Nektek!</p>
         </div>
         <div class="columns">
           <h3><span class="user">Anita &amp; Tóni</span></h3>
-          <p>Kedves Ferenc és Gábor!<br> Szeretnénk még egyszer megköszönni azt a fantasztikus hangulatot, amit 2013. június 1-én esküvőnkön teremtetettek. Nagyon sok lakodalomban jártunk már, de ilyen minőségi zenét sehol nem hallottunk. Külön köszönet
-            a korai esti órákban játszott gyermekeknek szóló dalokért, tekintettel arra, hogy a 85 főből 23 gyermek volt. A kicsik azóta is újra és újra a mi lagzinkba szeretnének jönni, annyira jól érezték magukat, a szülők pedig természetesen odáig
-            vannak és vissza.<br> <br> Örülünk, hogy Titeket választottunk és reméljük Ti is olyan jól éreztétek magatokat, mint mi. Akinek tudunk, csak ajánlani fogunk Titeket, sok sikert és jó egészséget kívánunk Nektek a jövőben.<br> Szeretettel: Anita
-            &amp; Tóni</p>
+          <p>Kedves Ferenc és Gábor!<br>
+            Szeretnénk még egyszer megköszönni azt a fantasztikus hangulatot, amit 2013. június 1-én esküvőnkön teremtetettek. Nagyon sok lakodalomban jártunk már, de ilyen minőségi zenét sehol nem hallottunk. Külön köszönet a korai esti órákban játszott gyermekeknek szóló dalokért, tekintettel arra, hogy a 85 főből 23 gyermek volt. A kicsik azóta is újra és újra a mi lagzinkba szeretnének jönni, annyira jól érezték magukat, a szülők pedig természetesen odáig vannak és vissza.<br> <br>
+            Örülünk, hogy Titeket választottunk és reméljük Ti is olyan jól éreztétek magatokat, mint mi. Akinek tudunk, csak ajánlani fogunk Titeket, sok sikert és jó egészséget kívánunk Nektek a jövőben.<br>
+            Szeretettel: Anita &amp; Tóni</p>
         </div>
         <div class="columns">
           <h3><span class="user">Adrienn és Peti</span></h3>
-          <p>Köszönettel: Adrienn és Peti<br> Ezúton is szeretnénk megköszönni nektek, hogy jó ráérzéssel, és figyelve a jelenlévők igényeire, remek hangulatot teremtettetek zenétekkel az esküvőnkön. Mind a kicsik, mind a nagyok és az idősebbek is nagyon
-            élvezték a lakodalmat, azóta is egymás után érkeznek a pozitív visszajelzések, és dicsérik a zenekar választásunkat. Nektek köszönhetően pont olyanra sikeredett az este, amilyet mindig is szerettünk volna. Külön köszönet a meglepetés dalokért,
-            és hogy egészen friss számokat is becsempésztetek a repertoárotokba. További sikereket kívánunk nektek, és mindenkinek bátran ajánlunk benneteket!<br> Minden jót kívánunk!</p>
+          <p>Köszönettel: Adrienn és Peti<br>
+            Ezúton is szeretnénk megköszönni nektek, hogy jó ráérzéssel, és figyelve a jelenlévők igényeire, remek hangulatot teremtettetek zenétekkel az esküvőnkön. Mind a kicsik, mind a nagyok és az idősebbek is nagyon élvezték a lakodalmat, azóta is egymás után érkeznek a pozitív visszajelzések, és dicsérik a zenekar választásunkat. Nektek köszönhetően pont olyanra sikeredett az este, amilyet mindig is szerettünk volna. Külön köszönet a meglepetés dalokért, és hogy egészen friss számokat is becsempésztetek a repertoárotokba. További sikereket kívánunk nektek, és mindenkinek bátran ajánlunk benneteket!<br>
+            Minden jót kívánunk!</p>
         </div>
         <div class="columns">
           <h3><span class="user">Az ifjú Újfalusi házaspár: Laci és Anastassia</span></h3>
-          <p>Kedves Feri, Gábor!<br> Köszönjük a fantasztikus zenét és hangulatot amit teremtettetek. Hosszú évek alatt ilyen zenei teljesitménnyel nem találkoztam vendéglátós éveim alatt. Amit láttunk, hallottunk tőletek mindent felülmúlt amiről csak álmodhattunk.
-            Nem volt gond azzal ,hogy két nyelven ment az esküvő minden helyzetben toppon voltatok. Mindenkitől azt halljuk vissza ,hogy nagyon jó volt a zene a hangulat a show amit csináltatok. Tartsa meg titeket ilyennek az élet és ami biztos ,hogy
-            amint lehet rendezvényekre ajánlani foglak titeket. Reméljük még sokáig fogjátok húzni a jó talpalávalót.<br> Házasulók figyelmébe ajánlom ezek a srácok MEGÉRIK a pénzüket.<br> <br> from Anastassia<br> Thank you for the perfect job what you
-            been done guys!The music on our wedding was unforgattable. Wee loved everything i will try to get your songs to show at home to my relatives and friends. Excellent job!!</p>
+          <p>Kedves Feri, Gábor!<br>
+            Köszönjük a fantasztikus zenét és hangulatot amit teremtettetek. Hosszú évek alatt ilyen zenei teljesitménnyel nem találkoztam vendéglátós éveim alatt. Amit láttunk, hallottunk tőletek mindent felülmúlt amiről csak álmodhattunk. Nem volt gond azzal ,hogy két nyelven ment az esküvő minden helyzetben toppon voltatok. Mindenkitől azt halljuk vissza ,hogy nagyon jó volt a zene a hangulat a show amit csináltatok. Tartsa meg titeket ilyennek az élet és ami biztos ,hogy amint lehet rendezvényekre ajánlani foglak titeket. Reméljük még sokáig fogjátok húzni a jó talpalávalót.<br>
+            Házasulók figyelmébe ajánlom ezek a srácok MEGÉRIK a pénzüket.<br> <br>
+            from Anastassia<br>
+            Thank you for the perfect job what you been done guys!The music on our wedding was unforgattable. Wee loved everything i will try to get your songs to show at home to my relatives and friends. Excellent job!!</p>
         </div>
         <div class="columns">
           <h3><span class="user">Varsányiék: Kriszti és Dani</span></h3>
-          <p>Kedves Ok zenekar!<br> Szeretnénk nektek megköszönni, hogy ilyen csodálatos estévé varázsoltátok a lakodalmunkat! A vendégek az első perctől kezdve áradoztak rólatok és az óta is dicsérik a választásunkat. A lakodalmas ház tulaja, aki már sok
-            sok zenekart hallott, csak jót tudott rólatok mondani és a jövőben mindenkinek titeket fog ajánlani. :) Nagyon nagyon jól éreztük magunkat.<br> A lakodalmunk életünk egyik legfontosabb eseménye volt. Nagyon örülünk neki, hogy ezen az estén
-            ti zenéltetek és minden jegyespárnak csak ajánlani tudunk titeket. Profi, lelkiismeretes páros vagytok, akik igazán szívből zenéltek! Köszönjük!</p>
+          <p>Kedves Ok zenekar!<br>
+            Szeretnénk nektek megköszönni, hogy ilyen csodálatos estévé varázsoltátok a lakodalmunkat! A vendégek az első perctől kezdve áradoztak rólatok és az óta is dicsérik a választásunkat. A lakodalmas ház tulaja, aki már sok sok zenekart hallott, csak jót tudott rólatok mondani és a jövőben mindenkinek titeket fog ajánlani. :) Nagyon nagyon jól éreztük magunkat.<br>
+            A lakodalmunk életünk egyik legfontosabb eseménye volt. Nagyon örülünk neki, hogy ezen az estén ti zenéltetek és minden jegyespárnak csak ajánlani tudunk titeket. Profi, lelkiismeretes páros vagytok, akik igazán szívből zenéltek! Köszönjük!</p>
         </div>
         <div class="columns">
           <h3><span class="user">Sallai Norbertné</span></h3>
-          <p>Nagyon szépen köszönjük a szeptember 8-ai bulit!Mindenki csak dicsér Titeket! Állati jók voltatok! Nem hagytátok ellaposodni a hangulatot és persze a kezdeti bakiknál vigasztaltatok minket :) Jól együtt működtetek a vőféllyel is!Fergeteges bulit
-            csináltatok! Örülünk,hogy Titeket választottunk!!!KÖSZÖNJÜK!!!!!!!:))<br> Üdv.: Fanni és Norbi</p>
+          <p>Nagyon szépen köszönjük a szeptember 8-ai bulit!Mindenki csak dicsér Titeket! Állati jók voltatok! Nem hagytátok ellaposodni a hangulatot és persze a kezdeti bakiknál vigasztaltatok minket :) Jól együtt működtetek a vőféllyel is!Fergeteges bulit csináltatok! Örülünk,hogy Titeket választottunk!!!KÖSZÖNJÜK!!!!!!!:))<br>
+            Üdv.: Fanni és Norbi</p>
         </div>
         <div class="columns">
           <h3><span class="user">Toth Zsolt és Réka Krisztina Tóth-Tolnai</span></h3>
-          <p>Drága Ferenc és Gábor!<br> Elmondhatatlanul hálásak vagyunk nektek azért a hangulatért amit nyujtottatok nekünk,aug.25-én az esküvőnk napján. Minden egyes dal-nóta megmaradt bennünk,mert a hangulat amit Ti adtatok felejthetetlen! Külön köszönet
-            a tanácsokért amit a megbeszélésen adtatok, sokat segített. További sok sikert nektek, jó egészséget és ha egyszer Londonban jártok, mindenképpen szeretnénk veletek találkozni!<br> Köszönettel Toth Zsolt és Réka Krisztina Tóth-Tolnai</p>
+          <p>Drága Ferenc és Gábor!<br>
+            Elmondhatatlanul hálásak vagyunk nektek azért a hangulatért amit nyujtottatok nekünk,aug.25-én az esküvőnk napján. Minden egyes dal-nóta megmaradt bennünk,mert a hangulat amit Ti adtatok felejthetetlen! Külön köszönet a tanácsokért amit a megbeszélésen adtatok, sokat segített. További sok sikert nektek, jó egészséget és ha egyszer Londonban jártok, mindenképpen szeretnénk veletek találkozni!<br>
+            Köszönettel Toth Zsolt és Réka Krisztina Tóth-Tolnai</p>
         </div>
         <div class="columns">
           <h3><span class="user">Marcsi és Misi</span></h3>
-          <p>Szeretnénk még egyszer MINDENT megköszönni. Hihetetlenül jó hangulatot teremtettetek az esküvőn.<br> Akinek csak tudjuk, mondjuk, hogy mennyire nagyszerű zenekar vagytok, bár igaz, nem is nehéz rólatok ódákat zengeni!!!! Szóval nagyon szépen
-            köszönjük, hogy hozzájárultatok életünk legszebb napjához! Reméljük, hogy fogunk még valamikor, valamelyik lagziban találkozni! ;)<br> Üdvözlettel és szeretettel: Marcsi és Misi</p>
+          <p>Szeretnénk még egyszer MINDENT megköszönni. Hihetetlenül jó hangulatot teremtettetek az esküvőn.<br>
+            Akinek csak tudjuk, mondjuk, hogy mennyire nagyszerű zenekar vagytok, bár igaz, nem is nehéz rólatok ódákat zengeni!!!! Szóval nagyon szépen köszönjük, hogy hozzájárultatok életünk legszebb napjához! Reméljük, hogy fogunk még valamikor, valamelyik lagziban találkozni! ;)<br>
+            Üdvözlettel és szeretettel: Marcsi és Misi</p>
         </div>
         <div class="columns">
           <h3><span class="user">Pintér-házaspár</span></h3>
-          <p>Szeretnénk még egyszer mindent megköszönni nektek! Az összes rokon odáig van, hogy milyen szuper volt a hangulat,mindenki kérdezgeti, hogy honnan ismerünk benneteket!Köszönöm, hogy a sok-sok egyéni apró kérésemet is hiánytalanul teljesítettétek!Elképesztő,
-            hogy mindig éreztétek, mit kíván a közönség! :))) Az biztos, hogy én minden házasulandó rokonomnak ajánlani fogom az OK zenekart! :)</p>
+          <p>Szeretnénk még egyszer mindent megköszönni nektek! Az összes rokon odáig van, hogy milyen szuper volt a hangulat,mindenki kérdezgeti, hogy honnan ismerünk benneteket!Köszönöm, hogy a sok-sok egyéni apró kérésemet is hiánytalanul teljesítettétek!Elképesztő, hogy mindig éreztétek, mit kíván a közönség! :))) Az biztos, hogy én minden házasulandó rokonomnak ajánlani fogom az OK zenekart! :)</p>
         </div>
         <div class="columns">
           <h3><span class="user">Szvétek Éva</span></h3>
-          <p>Nagyon szépen köszönünk Nektek MINDENT!!! Hálásak vagyunk , hogy ilyen fantasztikus hangulatú lett a nagy napunk , nemcsak, hogy kedvesek és barátságosak vagytok, de a játékotok is szuper, minden vendégünktől azt hallottuk a nap folyamán,&nbsp;hogy
-            még soha nem voltak olyan lakodalomban, ahol ilyen jó zenekar lett volna, szóval tényleg nagyon örülünk és nagyon szépen köszönjük Nektek !!! Örülünk, hogy megismerhettünk Benneteket , reméljük, hogy&nbsp;még találkozhatunk valahol, valamikor!
-            Üdvözlet tőlünk és tőlem külön puszi! Szvétek Éva</p>
+          <p>Nagyon szépen köszönünk Nektek MINDENT!!! Hálásak vagyunk , hogy ilyen fantasztikus hangulatú lett a nagy napunk , nemcsak, hogy kedvesek és barátságosak vagytok, de a játékotok is szuper, minden vendégünktől azt hallottuk a nap folyamán,&nbsp;hogy még soha nem voltak olyan lakodalomban, ahol ilyen jó zenekar lett volna, szóval tényleg nagyon örülünk és nagyon szépen köszönjük Nektek !!! Örülünk, hogy megismerhettünk Benneteket , reméljük, hogy&nbsp;még találkozhatunk valahol, valamikor! Üdvözlet tőlünk és tőlem külön puszi! Szvétek Éva</p>
         </div>
         <div class="columns">
           <h3><span class="user">Füzesi (Péterfi) Annamária</span></h3>
-          <p>Szerettem volna írásban is megköszönni nektek mindent. Így a nászút után is visszagondolva annyira fantasztikus bulit csináltatok az esküvőnkből, hogy még mindig a hatása alatt vagyunk. A vendégeink és mi is nagyon jót buliztunk és nem a visszafogott
-            stílusban. Most is, így több mint két hét után, felhívnak a vendégeink, hogy benneteket&nbsp;dícsérjen. Örülök, hogy fél évvel ezelőtt véletlenül rá kattintottam a linketekre és mellettetek döntöttünk. Nagyon remélem még jó pár bulit megélünk
-            együtt. Köszönettel és üdvözlettel, Füzesi (Péterfi)&nbsp;Annamária</p>
+          <p>Szerettem volna írásban is megköszönni nektek mindent. Így a nászút után is visszagondolva annyira fantasztikus bulit csináltatok az esküvőnkből, hogy még mindig a hatása alatt vagyunk. A vendégeink és mi is nagyon jót buliztunk és nem a visszafogott stílusban. Most is, így több mint két hét után, felhívnak a vendégeink, hogy benneteket&nbsp;dícsérjen. Örülök, hogy fél évvel ezelőtt véletlenül rá kattintottam a linketekre és mellettetek döntöttünk. Nagyon remélem még jó pár bulit megélünk együtt. Köszönettel és üdvözlettel, Füzesi (Péterfi)&nbsp;Annamária</p>
         </div>
         <div class="columns">
           <h3><span class="user">Hajdúböszörményi lakodalom</span></h3>
-          <p>Sziasztok Ti Csodálatos Emberek. Július 3.án Hajdúböszörményben volt a fiam Imi és menyem Edó esküvője, amit ti feledhetetlenné tettetek azt hiszem sokunk számára. Egy évvel ezelőtt mikor kezdtük tervezni, szervezni az esküvőt Imikével a neten
-            elkezdtük keresgetni a lakodalmas zenészeket. Mint zenész, a fiam különleges zenészeket akart az esküvőjére.És rátok találtunk. Meg kell mondjam, volt egy kis félsz bennünk, mivel élőben nem hallottuk benneteket. Mikor beléptünk a "bálterembe"
-            meghallottuk a játékotokat összenéztünk a fiammal és annyit intettünk egymásnak "oké". Mi kell egy jó lagzihoz?? ..boldog pár, csodás helyszín, szerető család, , csodálatos szerető igaz barátok, és ami nagyon fontos szuper zene. Na ezt megkaptuk
-            tőletek. Köszönöm hogy nemcsak a zenétek szuper, hanem belőletek is sugárzik a kedvesség amit minden ember érzett.Úgy viselkedtetek mintha ezer éve ismernétek az ifjú párt. Szuper hangulat volt amit elsősorban nektek köszönhetünk. A kicsi
-            fiam 15 éves, de ha jó pár év múlva nősül biztosan találkozunk.<br> Mégegyszer :KÖSZÖNET és HÁLA</p>
+          <p>Sziasztok Ti Csodálatos Emberek. Július 3.án Hajdúböszörményben volt a fiam Imi és menyem Edó esküvője, amit ti feledhetetlenné tettetek azt hiszem sokunk számára. Egy évvel ezelőtt mikor kezdtük tervezni, szervezni az esküvőt Imikével a neten elkezdtük keresgetni a lakodalmas zenészeket. Mint zenész, a fiam különleges zenészeket akart az esküvőjére.És rátok találtunk. Meg kell mondjam, volt egy kis félsz bennünk, mivel élőben nem hallottuk benneteket. Mikor beléptünk a "bálterembe" meghallottuk a játékotokat összenéztünk a fiammal és annyit intettünk egymásnak "oké". Mi kell egy jó lagzihoz?? ..boldog pár, csodás helyszín, szerető család, , csodálatos szerető igaz barátok, és ami nagyon fontos szuper zene. Na ezt megkaptuk tőletek. Köszönöm hogy nemcsak a zenétek szuper, hanem belőletek is sugárzik a kedvesség amit minden ember érzett.Úgy viselkedtetek mintha ezer éve ismernétek az ifjú párt. Szuper hangulat volt amit elsősorban nektek köszönhetünk. A kicsi fiam 15 éves, de ha jó pár év múlva nősül biztosan találkozunk.<br>
+            Mégegyszer :KÖSZÖNET és HÁLA</p>
         </div>
         <div class="columns">
           <h3><span class="user">Lilla</span></h3>
-          <p>A ZENÉSZEK KIRÁLYAI Hello fiúk! 2007 szeptember 29-án Békésen voltunk 1 lagziba ahol ti voltatok a násznép szorakoztatói! Szeretném nektek megköszönni azt az estét mert életem során még 1 lagziba sem éreztem magam ennyire jól. Annyira jó volt
-            hogy figyeltek a vendégekre figyelembe vettétek a násznép korosztáját és olyan zenét játszottatok ami mindenki igényét kielégitette! Kivánok nektek sok sikert és sok munkát! Kár hogy ennyire messzire élünk mert töbször találkoznánk! Üdv nektek
-            Lilla.</p>
+          <p>A ZENÉSZEK KIRÁLYAI Hello fiúk! 2007 szeptember 29-án Békésen voltunk 1 lagziba ahol ti voltatok a násznép szorakoztatói! Szeretném nektek megköszönni azt az estét mert életem során még 1 lagziba sem éreztem magam ennyire jól. Annyira jó volt hogy figyeltek a vendégekre figyelembe vettétek a násznép korosztáját és olyan zenét játszottatok ami mindenki igényét kielégitette! Kivánok nektek sok sikert és sok munkát! Kár hogy ennyire messzire élünk mert töbször találkoznánk! Üdv nektek Lilla.</p>
         </div>
         <div class="columns">
           <h3><span class="user">J</span></h3>
-          <p>A zenekar: Őket az interneten ajánlották. 2006 nyarán elmentünk megnézni őket egy lagzi előtt a Liget Hotelbe, beszerelés után játszottak nekünk három számot, és kaptunk tőlük két demo cd-t. Még aznap Gödöllőn órákig táncoltunk a zenéjükre,
-            így következő héten el is küldtem nekik a foglalót. Fantasztikus hangulatot varázsoltak, hajnali 5-ig buliztunk velük, szinte alig tartottak szünetet, egyszerűen showmen-ek! Mindenben partnerek voltak! Mivel Szituval már összeszoktak, a lencsefőzelékes
-            meglepetésben is számíthattunk rájuk J</p>
+          <p>A zenekar: Őket az interneten ajánlották. 2006 nyarán elmentünk megnézni őket egy lagzi előtt a Liget Hotelbe, beszerelés után játszottak nekünk három számot, és kaptunk tőlük két demo cd-t. Még aznap Gödöllőn órákig táncoltunk a zenéjükre, így következő héten el is küldtem nekik a foglalót. Fantasztikus hangulatot varázsoltak, hajnali 5-ig buliztunk velük, szinte alig tartottak szünetet, egyszerűen showmen-ek! Mindenben partnerek voltak! Mivel Szituval már összeszoktak, a lencsefőzelékes meglepetésben is számíthattunk rájuk J</p>
         </div>
         <div class="columns">
           <h3><span class="user">Matuz-Zámbó Judit</span></h3>
-          <p>A mi esküvőnk 2007. augusztus 18-án volt Lajosmizsén, és mindenkinek, aki értünk dolgozott aznap nagyon-nagyon köszönöm a rendkívül korrekt, megbízható és 120%-os közreműködést! A zenekar fantasztikus hangulatot varázsolt, hajnali 5-ig buliztunk
-            velük, szinte alig tartottak szünetet, egyszerűen showmen-ek! Mindenben partnerek voltak! Vőfélyünket, Szitut, ugye nem kell bemutatni? Mindenre odafigyelt, minden flottul zajlott, rugalmasan alkalmazkodott a programváltozásokhoz,.... Mindenkinek
-            hatalmas köszönet ezúttal is, a hozzáállásért, a korrektségért és a lelkesedésért! Imádtuk a mi nagy napunkat, és ez nektek is köszönhető! Minden jót Nektek, puszi: Matuz-Zámbó Judit</p>
+          <p>A mi esküvőnk 2007. augusztus 18-án volt Lajosmizsén, és mindenkinek, aki értünk dolgozott aznap nagyon-nagyon köszönöm a rendkívül korrekt, megbízható és 120%-os közreműködést! A zenekar fantasztikus hangulatot varázsolt, hajnali 5-ig buliztunk velük, szinte alig tartottak szünetet, egyszerűen showmen-ek! Mindenben partnerek voltak! Vőfélyünket, Szitut, ugye nem kell bemutatni? Mindenre odafigyelt, minden flottul zajlott, rugalmasan alkalmazkodott a programváltozásokhoz,.... Mindenkinek hatalmas köszönet ezúttal is, a hozzáállásért, a korrektségért és a lelkesedésért! Imádtuk a mi nagy napunkat, és ez nektek is köszönhető! Minden jót Nektek, puszi: Matuz-Zámbó Judit</p>
         </div>
         <div class="columns">
           <h3><span class="user">Pintér-Tóth Nikolett &amp; Pintér Roland</span></h3>
-          <p>A mi lagzink 2006. május 6-án volt már több, mint 1 éve,&nbsp;gyorsan megy az idő , azóta 2007. május 28-án már született egy kislányunk is Patrícia. Nagyon szép emlékekkel gondolunk vissza a lakodalmunkra, szuper bulit csináltatok!&nbsp;Azóta
-            volt pár zenekar akiket hallottunk játszani, de mindíg az jut az eszembe, hogy akkor mi milyen jól választottunk, mert ti zenéltetek a legjobban! További jó bulikat kívánunk nektek! Üdvözlettel: Pintér-Tóth Nikolett &amp; Pintér Roland</p>
+          <p>A mi lagzink 2006. május 6-án volt már több, mint 1 éve,&nbsp;gyorsan megy az idő , azóta 2007. május 28-án már született egy kislányunk is Patrícia. Nagyon szép emlékekkel gondolunk vissza a lakodalmunkra, szuper bulit csináltatok!&nbsp;Azóta volt pár zenekar akiket hallottunk játszani, de mindíg az jut az eszembe, hogy akkor mi milyen jól választottunk, mert ti zenéltetek a legjobban! További jó bulikat kívánunk nektek! Üdvözlettel: Pintér-Tóth Nikolett &amp; Pintér Roland</p>
         </div>
         <div class="columns">
           <h3><span class="user">Slezák-Balog Erika</span></h3>
@@ -182,38 +176,50 @@
         </div>
         <div class="columns">
           <h3><span class="user">Kurucz Balázsné Lári</span></h3>
-          <p>Múlt hét pénteken mulattunk nagyot veletek a Kéményseprő étteremben! Utána szombaton is lagziban voltunk és leírhatatlan a különbség a két együttes között. Nemcsak a zenei hangzásra gondolok, hanem a hangulat teremtésre, a kontaktustartásra
-            a népséggel és a kevés szünetre is! Köszönöm mindannyiunk nevében és ajánllak Titeket mindenkinek, bár én már elkeltem.. Kurucz Balázsné Lári</p>
+          <p>Múlt hét pénteken mulattunk nagyot veletek a Kéményseprő étteremben! Utána szombaton is lagziban voltunk és leírhatatlan a különbség a két együttes között. Nemcsak a zenei hangzásra gondolok, hanem a hangulat teremtésre, a kontaktustartásra a népséggel és a kevés szünetre is! Köszönöm mindannyiunk nevében és ajánllak Titeket mindenkinek, bár én már elkeltem.. Kurucz Balázsné Lári</p>
         </div>
         <div class="columns last">
           <h3><span class="user">Víg László</span></h3>
-          <p>Sziasztok! Sok zenekarral találkoztunk már a munkánk során, de az általatok nyújtott teljesítmény lenyűgözött engem és a videós kollégámat is. Nem vagyunk vájtfülűek, de az énekhangok és a hangszerek is nagyon bejöttek mindkettőnknek. Bízom
-            benne, hogy még találkozunk és újra hallhatjuk a zenéteket. Ha pedig bárki zenekart keres, feltétlenül ajánlani fogunk benneteket. A nyárra és egész évre rengeteg bulit kívánunk, üdvözlettel: Víg László - fotós</p>
+          <p>Sziasztok! Sok zenekarral találkoztunk már a munkánk során, de az általatok nyújtott teljesítmény lenyűgözött engem és a videós kollégámat is. Nem vagyunk vájtfülűek, de az énekhangok és a hangszerek is nagyon bejöttek mindkettőnknek. Bízom benne, hogy még találkozunk és újra hallhatjuk a zenéteket. Ha pedig bárki zenekart keres, feltétlenül ajánlani fogunk benneteket. A nyárra és egész évre rengeteg bulit kívánunk, üdvözlettel: Víg László - fotós</p>
         </div>
       </div>
     </div>
     <div id="contact">
       <div class="inner">
         <div class="row">
-          <div class="columns small-6 medium-4 desktop-4">
-            <div><img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_saxo.png?0df0ab58ad30d01c24aca64b0f10beba"> <img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_klarinet.png?db565161be3adf19bb51d86fd2116938"></div>
+          <div class="columns small-12 medium-4 desktop-4">
+            <div><img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_saxo.png?0df0ab58ad30d01c24aca64b0f10beba" class="small"> <img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_klarinet.png?db565161be3adf19bb51d86fd2116938" class="small"></div>
             <div>
               <h3><span>O</span>berritter Ferenc</h3>
-              <p>szaxofon, klarinét, ének</p>
-              <p>06-30/296-3015</p>
+              <p>szaxofon, klarinét</p>
+              <p>Kapcsolattartó-ügyvezető</p>
+              <p>+36302963015</p>
             </div>
           </div>
-          <div class="columns small-6 medium-4 desktop-4">
+          <div class="columns small-12 medium-4 desktop-4">
             <div><img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_harmonika.png?314b430d40c93d53ee349c5fec243dbb"> <img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_szint.png?e6147df0c569500bccc3b576f5e7a1f9"></div>
             <div>
               <h3><span>K</span>rutki Gábor</h3>
-              <p>harmonika, szintetizátor, ének</p>
-              <p>06-20/9860-214</p>
+              <p>harmonika, szintetizátor</p>
+              <p>+36209860214</p>
             </div>
           </div>
-          <div class="columns small-12 medium-4 desktop-4"><a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a> <a href="https://www.facebook.com/people/Ferenc-Oberritter/100009251974053" target="_blank" rel="noopener" title="okzenekar" class="facebook">kövess minket Facebookon</a>            <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" rel="noopener" title="okzenekar" class="youtube">Youtube csatornánk</a></div>
+          <div class="columns small-12 medium-4 desktop-4">
+            <div><img alt="ok zenekar lakodalom party bál eksüvő" src="/src/assets/img/pic_drum.jpg?111762e9f4e0dece00b685fd6485b291"></div>
+            <div>
+              <h3><span>K</span>ocziány Antal</h3>
+              <p>dobok</p>
+              <p>+36305318353</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns small-12 medium-12 desktop-12"><a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a> <a href="http://hu-hu.facebook.com/pages/OK-Zenekar/267446909949427" target="_blank" title="okzenekar" class="facebook">kövess minket Facebookon</a> <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" title="okzenekar" class="youtube">Youtube csatornánk</a></div>
         </div>
       </div>
+    </div>
+    <div id="video">
+      <!---->
     </div>
     <div id="audio">
       <div class="inner">
@@ -223,8 +229,16 @@
               <div class="line">
                 <div class="pointer"></div>
                 <div class="current"></div>
-              </div> <span class="now">00:00</span> <span class="decor">/</span> <span class="total">00:00</span></div>
-            <div class="volume"><span class="speaker"><svg xml:space="preserve" version="1" id="speaker" width="400pt" height="400pt" viewBox="0 0 75 75"><g id="g1"><polygon id="polygon1" points="39,14 22,29 6,29 6,48 22,48 39,63 39,14" style="stroke: #111111; stroke-width: 5px; stroke-linejoin: round; fill: #111111;"></polygon><path id="path1" d="M 48,49 C 50,46 51,42 51,38 C 51,34 50,31 48,28" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path> <path id="path2" d="M 55,21 C 59,26 61,32 61,38 C 61,45 59,51 55,56" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path> <path id="path3" d="M 62,63 C 67,56 70,48 70,38 C 70,29 67,21 62,14" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path></g></svg></span>
+              </div> <span class="now">00:00</span> <span class="decor">/</span> <span class="total">00:00</span>
+            </div>
+            <div class="volume"><span class="speaker"><svg xml:space="preserve" version="1" id="speaker" width="400pt" height="400pt" viewBox="0 0 75 75">
+                  <g id="g1">
+                    <polygon id="polygon1" points="39,14 22,29 6,29 6,48 22,48 39,63 39,14" style="stroke: #111111; stroke-width: 5px; stroke-linejoin: round; fill: #111111;"></polygon>
+                    <path id="path1" d="M 48,49 C 50,46 51,42 51,38 C 51,34 50,31 48,28" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path>
+                    <path id="path2" d="M 55,21 C 59,26 61,32 61,38 C 61,45 59,51 55,56" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path>
+                    <path id="path3" d="M 62,63 C 67,56 70,48 70,38 C 70,29 67,21 62,14" style="fill: none; stroke: #111111; stroke-width: 5px; stroke-linecap: round;"></path>
+                  </g>
+                </svg></span>
               <div class="line">
                 <div class="pointer"></div>
                 <div class="current"></div>
@@ -233,16 +247,16 @@
           </div>
           <div class="tabContainer list">
             <div class="tabContent active"><a href="/src/assets/mp3/palinkadal.mp3" data-song-index="0" class="song"><span>♪</span> Pálinka Dal / Magna Cum Laude
-          </a><a href="/src/assets/mp3/mostmulik.mp3" data-song-index="1" class="song"><span>♪</span> Most múlik pontosan / Quimby
-          </a><a href="/src/assets/mp3/volare.mp3" data-song-index="2" class="song"><span>♪</span> Volare / Gipsy Kings
-          </a><a href="/src/assets/mp3/diximix-klarinet.mp3" data-song-index="3" class="song"><span>♪</span> Diximix - klarinét
-          </a><a href="/src/assets/mp3/feelings.mp3" data-song-index="4" class="song active"><span>♪</span> Feelings - Szaxofon
-          </a><a href="/src/assets/mp3/umbala_umba.mp3" data-song-index="5" class="song"><span>♪</span> Umbala umba / Váradi Roma Café
-          </a><a href="/src/assets/mp3/mulatos.mp3" data-song-index="6" class="song"><span>♪</span> Mulatós mix
-          </a><a href="/src/assets/mp3/desafinado.mp3" data-song-index="7" class="song"><span>♪</span> Desafinado
-          </a><a href="/src/assets/mp3/fly_me_to_the_moon.mp3" data-song-index="8" class="song"><span>♪</span> Fly me to the moon / Frank Sinatra
-          </a><a href="/src/assets/mp3/my_way.mp3" data-song-index="9" class="song"><span>♪</span> My way / Frank Sinatra
-          </a></div>
+              </a><a href="/src/assets/mp3/mostmulik.mp3" data-song-index="1" class="song"><span>♪</span> Most múlik pontosan / Quimby
+              </a><a href="/src/assets/mp3/volare.mp3" data-song-index="2" class="song"><span>♪</span> Volare / Gipsy Kings
+              </a><a href="/src/assets/mp3/diximix-klarinet.mp3" data-song-index="3" class="song"><span>♪</span> Diximix - klarinét
+              </a><a href="/src/assets/mp3/feelings.mp3" data-song-index="4" class="song active"><span>♪</span> Feelings - Szaxofon
+              </a><a href="/src/assets/mp3/umbala_umba.mp3" data-song-index="5" class="song"><span>♪</span> Umbala umba / Váradi Roma Café
+              </a><a href="/src/assets/mp3/mulatos.mp3" data-song-index="6" class="song"><span>♪</span> Mulatós mix
+              </a><a href="/src/assets/mp3/desafinado.mp3" data-song-index="7" class="song"><span>♪</span> Desafinado
+              </a><a href="/src/assets/mp3/fly_me_to_the_moon.mp3" data-song-index="8" class="song"><span>♪</span> Fly me to the moon / Frank Sinatra
+              </a><a href="/src/assets/mp3/my_way.mp3" data-song-index="9" class="song"><span>♪</span> My way / Frank Sinatra
+              </a></div>
           </div>
         </div>
       </div>
@@ -256,8 +270,7 @@
           <div class="columns small-12 medium-12 desktop-12"><a href="/partnereink" class="fullWidth">Partnereink </a></div>
         </div>
         <div class="row text-center">
-          <div class="columns small-12 medium-12 desktop-12"><a href="https://www.facebook.com/people/Ferenc-Oberritter/100009251974053" target="_blank" rel="noopener" title="okzenekar" class="facebook">kövess minket Facebookon</a> <span>/</span> <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank"
-              rel="noopener" title="okzenekar" class="youtube">Youtube csatornánk</a> <span>/</span> <a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a></div>
+          <div class="columns small-12 medium-12 desktop-12"><a href="https://www.facebook.com/people/Ferenc-Oberritter/100009251974053" target="_blank" rel="noopener" title="okzenekar" class="facebook">kövess minket Facebookon</a> <span>/</span> <a href="http://www.youtube.com/user/OkzenekarDuo" target="_blank" rel="noopener" title="okzenekar" class="youtube">Youtube csatornánk</a> <span>/</span> <a href="mailto:okzenekar@gmail.com" title="okzenekar@gmail.com" class="email">okzenekar@gmail.com</a></div>
         </div>
       </footer>
     </div>
