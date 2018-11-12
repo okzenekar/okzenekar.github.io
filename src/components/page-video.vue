@@ -1,7 +1,7 @@
 <template>
   <div id="video">
     <div class="inner" v-if="$route.path === '/'">
-      <div class="row">
+      <div class="row" style="margin-bottom:30px;">
         <div class="columns small-12 medium-6 desktop-6">
           <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/P8WpvZMx_g0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -10,6 +10,18 @@
         <div class="columns small-12 medium-6 desktop-6">
           <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/OGToB4gsifk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns small-12 medium-6 desktop-6">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/lxBEunVhhkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="columns small-12 medium-6 desktop-6">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/eVcG87BhZaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
