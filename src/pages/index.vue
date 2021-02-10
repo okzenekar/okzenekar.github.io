@@ -2,10 +2,11 @@
   <div class="inner index">
     <div class="row">
       <div class="small-12 medium-12 large-12 columns">
-        <img-cycle 
+        <!-- <img-cycle 
           :images="galleryImages" 
           :index="0"
-          loop ></img-cycle>
+          loop ></img-cycle> -->
+          <img class="members" src="/src/assets/img/cycle/p-1.jpg" alt="" />
       </div>
     </div>
     <div class="row">
@@ -48,6 +49,9 @@ export default {
 <style lang="scss">
   @import '~root/components/scss/_variables';
   .index {
+    .members {
+      margin-bottom: 20px;
+    }
     p{
       margin-bottom: 10px;
       &:last-child{

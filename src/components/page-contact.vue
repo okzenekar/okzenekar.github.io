@@ -2,29 +2,36 @@
   <div id="contact">
     <div class="inner">
       <div class="row">
-        <div class="columns small-12 medium-4 desktop-4">
+        <div class="columns small-12 medium-3 desktop-3">
           <div><img class="small" alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_saxo.png"> <img class="small" alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_klarinet.png"></div>
           <div>
-            <h3><span>O</span>berritter Ferenc</h3>
+            <h3><span>O</span>berritter <span>F</span>erenc</h3>
             <p>szaxofon, klarinét</p>
             <p>Kapcsolattartó-ügyvezető</p>
-            <p>+36302963015</p>
+            <p class="phone">+36302963015</p>
           </div>
         </div>
-        <div class="columns small-12 medium-4 desktop-4">
+        <div class="columns small-12 medium-3 desktop-3">
           <div><img alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_harmonika.png"> <img alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_szint.png"></div>
           <div>
-            <h3><span>K</span>rutki Gábor</h3>
+            <h3><span>K</span>rutki <span>G</span>ábor</h3>
             <p>harmonika, szintetizátor</p>
-            <p>+36209860214</p>
+            <p class="phone">+36209860214</p>
           </div>
         </div>
-        <div class="columns small-12 medium-4 desktop-4">
+        <div class="columns small-12 medium-3 desktop-3">
           <div><img alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_drum.jpg"></div>
           <div>
-            <h3><span>K</span>ocziány Antal</h3>
+            <h3><span>K</span>ocziány <span>A</span>ntal</h3>
             <p>dobok</p>
-            <p>+36305318353</p>
+            <p class="phone">+36305318353</p>
+          </div>
+        </div>
+        <div class="columns small-12 medium-3 desktop-3">
+          <div><img class="small" alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_saxo.png"> <img class="small" alt="ok zenekar lakodalom party bál eksüvő" src="~root/assets/img/pic_klarinet.png"></div>
+          <div>
+            <h3><span>T</span>ukács <span>J</span>ózsef</h3>
+            <p class="phone">szaxofon, klarinét</p>
           </div>
         </div>
       </div>
@@ -49,6 +56,10 @@
 #contact {
   margin-bottom: 0.9375rem;
   clear: both;
+  .phone {
+    padding-top: 5px;
+    font-style: italic;
+  }
   .inner {
     .row {
       margin: 0 0.9375rem;
@@ -122,7 +133,7 @@
           max-width: 50%;
         }
         &:first-child {
-          padding-right: 20px;
+          padding-right: 10px;
           font-size: 0;
         }
         vertical-align: top;

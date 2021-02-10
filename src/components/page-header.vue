@@ -169,7 +169,7 @@
           border-bottom: none;
         }
         &.router-link-active {
-          background: $blue;
+          background: $peach;
         }
       }
     }
@@ -199,7 +199,7 @@
         z-index: 2;
         .sub{
           &.active{
-            background: $blue;
+            background: $peach;
           }
         }
       }
@@ -267,7 +267,7 @@
           }
           &:hover {
             color: $gray;
-            background: $blue;
+            background: $peach;
           }
         }
       }
